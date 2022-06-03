@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Container from 'react-bootstrap/Container' 
 import Link from "next/link"
-import Footer from '../../component/Footer';
-import Header from "../../component/Navbar";
-import BreadHero from '../../component/BreadHero';
+import Footer from '../../../component/es/Footer';
+import Header from "../../../component/es/Navbar";
+import BreadHero from '../../../component/es/BreadHero';
 import Head from 'next/head'
 import { useRouter } from 'next/router';
-import Pageerror from "../../component/Pageerror"
+import Pageerror from "../../../component/es/Pageerror"
 
 export default function BlogDetails(props, router) {
   const location = useRouter();
@@ -16,13 +16,11 @@ export default function BlogDetails(props, router) {
 
   return (
     <>
-
-
       <Head>
         <title>{props.singleblog[0].title}</title>
         <meta name="description" content={props.singleblog[0].description} />
         <meta name="keywords" content={props.singleblog[0].keywords} />
-        <link rel="canonical" href={'https://www.usairling.com/blog' + props.singleblog[0].titleUrl} />
+        <link rel="canonical" href={'https://www.usairling.com/es/articulos' + props.singleblog[0].titleUrl} />
       </Head>
 
       <Header />
@@ -38,12 +36,12 @@ export default function BlogDetails(props, router) {
                   <h1 className="page-title__name">
                     {props.singleblog[0].title}
                   </h1> 
-
-                    <BreadHero linkhtml={<><ul className='bradcum'> <li> 
-                    <Link href="/">Home</Link></li>
-                    <li> <Link href="/blog"> Blogs </Link></li>
-                    <li className='breadcrumb-item active' aria-current="page">
-                    {props.singleblog[0].title}</li> </ul></>} />
+ 
+                    <BreadHero linkhtml={<><ul className='bradcum'> 
+                  <li> <Link href="/es/">Casa</Link> </li>
+                  <li> <Link href="/es/articulos">Articulos</Link> 
+                  </li> <li className='breadcrumb-item active' aria-current="page">
+                  {props.singleblog[0].title}</li> </ul></>} />
 
                 </div>
               </div>
@@ -99,12 +97,10 @@ export async function getServerSideProps(context) {
     "posttime": "",
     "status": "",
     "heading": "",
-    "img_url": "",
-    "siteId": "145",
     "categoryName": "",
-    "blogdes2": "",
-    "blogTagsName2": "",
-    "extarTag": "",
+    "siteId": "145",
+    "pageType": "Articulo",
+    "extraTag": "",
     "tfnHeader": "",
     "tfnFooter1": "",
     "tfnFooter2": "",
@@ -118,7 +114,8 @@ export async function getServerSideProps(context) {
     body: raw,
     redirect: 'follow'
   };
-  const res = await fetch("https://cms.travomint.com/travoles-content/blogdatabyid?authcode=Trav3103s987876", requestOptions)
+
+  const res = await fetch("https://cms.travomint.com/news-article/naDataById?authcode=Trav3103s987876", requestOptions)
   const onejson = await res.json()
 
   return {

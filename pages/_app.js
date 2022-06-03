@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
@@ -13,11 +13,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head></Head>
       <link rel="stylesheet" href="/styles/globals.css"></link>
-        <link rel="stylesheet" href="/styles/responsive.css"></link> 
+      <link rel="stylesheet" href="/styles/responsive.css"></link>
       <Component {...pageProps} />
     </>
   )
 }
 
 export default MyApp
- 

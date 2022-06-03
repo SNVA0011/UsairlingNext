@@ -4,64 +4,64 @@ import Col from 'react-bootstrap/Col'
 import Dropdown from 'react-bootstrap/Dropdown'
 import Nav from 'react-bootstrap/Nav'
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import DropdownButton from 'react-bootstrap/DropdownButton'
+import { useRouter } from 'next/router'; 
+import DropdownButton from 'react-bootstrap/DropdownButton' 
 
 
 export default function ChangeCountryMenu() {
     const location = useRouter();
-    const [lang, setLang] = useState('EN');
+    const [lang, setLang] = useState('ES');
     const [curr, setCurr] = useState('INR');
     const [expanded, setExpanded] = useState(false);
 
-    // loadingpage
+   // loadingpage
     const [loadingpage, setLoading] = useState(false);
     useEffect(() => {
-        location.events.on('routeChangeStart', () => { window.scrollTo(0, 0); setLoading(true) });
-        location.events.on('routeChangeComplete', () => setLoading(false));
-        location.events.on('routeChangeError', () => setLoading(false));
-        return () => {
-            location.events.off('routeChangeStart', () => { window.scrollTo(0, 0); setLoading(true) });
-            location.events.off('routeChangeComplete', () => setLoading(false));
-            location.events.off('routeChangeError', () => setLoading(false));
-        };
+      location.events.on('routeChangeStart', () => { window.scrollTo(0, 0); setLoading(true) });
+      location.events.on('routeChangeComplete', () => setLoading(false));
+      location.events.on('routeChangeError', () => setLoading(false));
+      return () => {
+        location.events.off('routeChangeStart', () => { window.scrollTo(0, 0); setLoading(true) });
+        location.events.off('routeChangeComplete', () => setLoading(false));
+        location.events.off('routeChangeError', () => setLoading(false));
+      };
     }, [location.events]);
 
     return (
-        <DropdownButton title={<><span> {lang} </span> </>} variant="outline-secondary" className='order-lg-3 ml-auto mr-3 mr-lg-0 btnlang'>
-            <div className='curr-block px-2'>
-                <h5 className='mb-3'>Select Language</h5>
-                {loadingpage ?
-                <div className='text-center py-4'>
-                <div className="spinner-border text-secondary" role="status">
-                <span className="sr-only">Loading...</span>
-              </div>
-              </div>
+        <DropdownButton title={<><span> {lang} </span> </>} variant="outline-secondary"  className='order-lg-3 ml-auto mr-3 mr-lg-0 btnlang'>
+        <div className='curr-block px-2'>
+            <h5 className='mb-3'>Seleccione El Idioma</h5>
+
+            {loadingpage ? 
+            <div className='text-center py-4'>
+             <div className="spinner-border text-secondary" role="status">
+             <span className="sr-only">Loading...</span>
+           </div>
+           </div>
                     :
-                    <Row>
-                        <Col xs="12" md="12" className='mb-2'>
-                            <Dropdown.Item as={Link} href="/" onClick={(e) => { setLang('EN') }}>
-                                <a className={'btn btn-site ripple-effbtn btn-40 btn-block text-center dropdown-item active'}>
-                                    <span>English</span>
-                                </a>
-                            </Dropdown.Item>
-                        </Col>
-                        <Col xs="12" md="12">
-                            <Dropdown.Item as={Link} href="/es" locale="es" onClick={(e) => { setLang('ES') }}>
-                                <a className={'btn btn-site ripple-effbtn btn-40 btn-block text-center dropdown-item '}>
-                                    <span>Spanish</span>
-                                </a>
-                            </Dropdown.Item>
-                        </Col>
-                    </Row>
-                }
-            </div>
-
-
-            {/* <Dropdown.Divider className='my-3'/>
-        <div className='curr-block'>
+            <Row>
+            <Col xs="12" md="12" className='mb-2'>
+                        <Dropdown.Item as={Link} href="/" onClick={(e) => { setLang('EN') }}>
+                            <a className={'btn btn-site ripple-effbtn btn-40 btn-block text-center dropdown-item'}>
+                                <span>English</span>
+                            </a>
+                        </Dropdown.Item>
+                    </Col>
+                    <Col xs="12" md="12">
+                        <Dropdown.Item as={Link} href="/es" locale="es" onClick={(e) => { setLang('ES') }}>
+                            <a className={'btn btn-site ripple-effbtn btn-40 btn-block text-center dropdown-item active'}>
+                                <span>Spanish</span>
+                            </a>
+                        </Dropdown.Item>
+                    </Col>
+            </Row>
+}
+        </div>
+    
+    
+        {/* <Dropdown.Divider className='my-3'/> */}
+        {/* <div className='curr-block'>
         <h5>Select Currency</h5>
-     
       <Row className='selcur-rew'>
                 <Col xs="6" md="3">
                 <Dropdown.Item onClick={(e)=>{setCurr('USD')}}  className='btn btn-site whitebt ripple-effbtn btn-40 btn-block text-center'><span>
@@ -101,6 +101,6 @@ export default function ChangeCountryMenu() {
                 </Col>
             </Row>  
         </div> */}
-        </DropdownButton>
+    </DropdownButton>
     )
 }

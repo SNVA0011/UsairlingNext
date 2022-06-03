@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Head from 'next/head';
 import Link from "next/link";
 import Container from 'react-bootstrap/Container';
-import BreadHero from "../../component/BreadHero";
-import Header from '../../component/Navbar'
-import Footer from "../../component/Footer"
-import Pageerror from "../../component/Pageerror"
+import BreadHero from "../../../component/es/BreadHero";
+import Header from '../../../component/es/Navbar'
+import Footer from "../../../component/es/Footer"
+import Pageerror from "../../../component/es/Pageerror"
 
 
 export default function Airline(props) {
@@ -13,11 +13,10 @@ export default function Airline(props) {
     window.scrollTo(0, 0)
   }, [])
 
-  console.log('props.singleflight-', props.singleflight)
 
   return (
     <>
-   <Header />
+      <Header />
 
       {
         props.singleflight?.length > 0 ?
@@ -27,10 +26,10 @@ export default function Airline(props) {
               <title>{props.singleflight[0].metaTitle}</title>
               <meta name="description" content={props.singleflight[0].metaDesc} />
               <meta name="keywords" content={props.singleflight[0].metaKeyword} />
-              <link rel="canonical" href={`https://www.usairling.com/flights/${props.singleflight[0].url}-${props.singleflight[0].pageValue}`} />
+              <link rel="canonical" href={`https://www.usairling.com/es/vuelos/${props.singleflight[0].url}-${props.singleflight[0].pageValue}`} />
             </Head>
 
-         
+
             <div className='blogadda'>
 
               <div className="page-title page-title--small page-title--blog align-left" >
@@ -39,10 +38,9 @@ export default function Airline(props) {
                     <h1 className="page-title__name">{props.singleflight[0].metaTitle} </h1>
                     <BreadHero linkhtml={<>
                       <ul className='bradcum'>
-                        <li> <Link href="/">Home</Link> </li>
+                        <li> <Link href="/es/">Casa</Link> </li>
                         <li className='breadcrumb-item active' aria-current="page">{props.singleflight[0].metaTitle}</li>
-                      </ul>
-                    </>} />
+                      </ul></>} />
                   </div>
 
                 </div>
@@ -50,22 +48,22 @@ export default function Airline(props) {
               </div>
               <div className='popular-destination blogaddalist details full-w'>
                 <Container>
-                <div className='blogaddalist-round about-uspage privacy__policy full-w pyblock-80 mb-5'>
-                      <div className='blogaddalist-inner'>
-                        <div className="blog-inner-box2">
+                  <div className='blogaddalist-round about-uspage privacy__policy full-w pyblock-80 mb-5'>
+                    <div className='blogaddalist-inner'>
+                      <div className="blog-inner-box2">
                         {props.singleflight[0].contentData.length == 0 ?
                           <p className='pb-2'>No Content found</p>
                           :
                           <div dangerouslySetInnerHTML={{ __html: props.singleflight[0].contentData }}></div>
                         }
-                        </div>
                       </div>
                     </div>
+                  </div>
                 </Container>
               </div>
             </div>
           </>
-          :  <Pageerror />
+          : <Pageerror />
       }
 
 
@@ -87,7 +85,7 @@ export async function getServerSideProps(context) {
 
   var raw = JSON.stringify({
     "contentId": "",
-    "pageType": "Airline",
+    "pageType": "AirlineE",
     "pageValue": cityname,
     "pageName": "",
     "metaTitle": "",

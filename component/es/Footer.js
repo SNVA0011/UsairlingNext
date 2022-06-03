@@ -3,12 +3,13 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
+
     <>
       <section class="banner-contact">
         <div class="container">
           <div class="banner-inner">
-            <h2>Attend the Best Flight with enthusiasm. We provided each and every time</h2>
-            <a href="tel:+1-00000000000" class="btn" target="_blank">Contact Us</a>
+            <h2>Asista al Best Flight con entusiasmo. Proporcionamos todas y cada una de las veces</h2>
+            <a href="tel:+1-0000000000" class="btn">Contacta con nosotros</a>
           </div>
         </div>
       </section>
@@ -19,54 +20,53 @@ export default function Footer() {
               <div class="col-lg-3">
                 <div class="footer__top__info">
                   <Link href="/">
-                    <a class="footer__top__info__logo"> 
+                    <a class="footer__top__info__logo">
                       <img src='/images/logo.svg' width={166} height={29} alt="logo" />
-                      </a>
+                    </a>
                   </Link>
-                  <p class="footer__top__info__desc">Discover amazing things to do everywhere you go.</p>
+                  <p class="footer__top__info__desc">
+                    Descubre cosas increíbles para hacer donde quiera que vayas.</p>
 
                 </div>
               </div>
               <div class="col-lg-3">
                 <aside class="footer__top__nav">
-                  <h3>Company</h3>
+                  <h3>Empresa</h3>
                   <ul>
-                    <li><Link href="/about-us">About Us</Link></li>
-                    <li><Link href="/blog">Blog</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
+                    <li><Link href="/es/sobre-nosotras"  >Sobre nosotros</Link></li>
+                    <li><Link href="/es/articulos"  >Artículos</Link></li>
+                    <li><Link href="/es/contacto" title="Contact">Contacto</Link></li>
                     <li className="d-none">
                       <Link href="/">
-                        <a className='ripple-effbtn d-inline-block'>
-                          <span>Home</span>
-                        </a>
+                        <span>Home</span>
                       </Link>
                     </li>
 
                     <li className="d-none">
                       <Link href="/es">
-                        <a className='ripple-effbtn d-inline-block'>
-                          <span>Casa</span>
-                        </a>
+                        <span>Casa</span>
                       </Link>
                     </li>
+
                   </ul>
                 </aside>
               </div>
               <div class="col-lg-3">
                 <aside class="footer__top__nav">
-                  <h3>Support</h3>
+                  <h3>Apoyo</h3>
                   <ul>
-                    <li><Link href="/privacy">Privacy Policy</Link></li>
-                    <li><Link href="/terms">Terms and Condition</Link></li>
-                    {/* <li><Link href="/site-map">Sitemap</Link></li> */}
+                    <li><Link href="/es/privacidad" title="Contact" >Política de privacidad</Link></li>
+                    <li><Link href="/es/terminos" title="terminos" >Términos y Condiciones</Link></li>
+                    {/* <li><Link href="/es/site-map" title="Contact" >
+mapa del sitio</Link></li> */}
 
                   </ul>
                 </aside>
               </div>
               <div class="col-lg-3">
                 <aside class="footer__top__nav footer__top__nav--contact">
-                  <h3>Contact Us</h3>
-                  <p>Email: <a href="mailto:support@Usairling.com" class="__cf_email__" target="_blank">support@Usairling.com</a></p>
+                  <h3>Contacta con nosotros</h3>
+                  <p>Email: <a href="mailto:support@Usairling.com<" class="__cf_email__" target="_blank">support@Usairling.com</a></p>
                   {/* <p>Phone: 1 (00) 832 2342</p> */}
                   <ul>
                     <li class="facebook">
@@ -95,10 +95,12 @@ export default function Footer() {
             </div>
           </div>
           <div class="footer__bottom">
-            <p class="footer__bottom__copyright">2022 © <Link href="/">Usairling</Link>. All rights reserved.</p>
+            <p class="footer__bottom__copyright">2022 © <Link href="/es/">Usairling</Link>.
+              Reservados todos los derechos.</p>
           </div>
         </div>
       </footer>
+
     </>
   );
 }

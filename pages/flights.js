@@ -6,6 +6,8 @@ import Link from "next/link"
 import Head from 'next/head'
 import Header from '../component/Navbar'
 import Footer from "../component/Footer"
+import Image from "next/image"
+
 
 export default function Flights(props) {
   useEffect(() => {
@@ -92,7 +94,8 @@ export default function Flights(props) {
                       <Link href={`/flights/${items.url}-${items.pageValue}`}>
                         <a className="airplane-iconbx sm d-flex align-items-center h-100">
                         <div className="cities__thumb hover__box__thumb">
-                          <img src="/images/airplane-icon.png" alt="airlineone" />
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
                         </div>
                         <div className="cities__info flex-grow-1">
                           <h3 className="cities__capital">{items.pageName}-{items.pageValue}</h3>

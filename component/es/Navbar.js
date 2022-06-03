@@ -16,8 +16,8 @@ export default function Header() {
                 <Navbar collapseOnSelect expanded={expanded} bg="" expand="lg">
                     <Container>
                         <Navbar.Brand>
-                            <Link href="/" onClick={() => window.innerWidth < 1200 ? setExpanded(false) : ''}>
-                                <a className={'navbar-brand ' + (location.pathname === "/" ? 'active' : '')}>
+                            <Link href="/es/" onClick={() => window.innerWidth < 1200 ? setExpanded(false) : ''}>
+                                <a className={'navbar-brand ' + (location.pathname === "/es/" ? 'active' : '')}>
                                     <img src='/images/logo.svg' alt='logo' width={200} height={35}></img>
                                 </a>
                             </Link>
@@ -28,36 +28,36 @@ export default function Header() {
                             <Nav className="mx-auto">
                                 <ul className='navbar-nav'>
                                     <li className='nav-item mx-lg-2'>
-                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/">
-                                            <a className={'nav-link ' + (location.pathname === "/" ? 'active' : '')}>
-                                                Home
+                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/es/">
+                                            <a className={'nav-link ' + (location.pathname === "/es" ? 'active' : '')}>
+                                                Casa
                                             </a>
                                         </Link>
                                     </li>
                                     <li className='nav-item mx-lg-2'>
-                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/about-us">
-                                            <a className={'nav-link ' + (location.pathname === "/about-us" ? 'active' : '')}>
-                                                About
+                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/es/sobre-nosotras">
+                                            <a className={'nav-link ' + (location.pathname === "/es/sobre-nosotras" ? 'active' : '')}>
+                                                Sobre
                                             </a>
                                         </Link></li>
                                     <li className='nav-item mx-lg-2'>
-                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/flights"> 
-                                            <a className={'nav-link ' + (location.pathname === "/flights" || location.pathname === "/flights/[Airline]" ? 'active' : '' ? 'active' : '')}>
-                                                Flight
+                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/es/vuelos"> 
+                                            <a className={'nav-link ' + (location.pathname === "/es/vuelos" || location.pathname === "/es/vuelos/[Airline]" ? 'active' : '' ? 'active' : '')}>
+                                                Vuelo
                                             </a>
                                         </Link>
                                     </li>
                                     <li className='nav-item mx-lg-2'>
-                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/blog">
-                                            <a className={'nav-link ' + (location.pathname === "/blog" || location.pathname === "/blog/[blogDetail]" ? 'active' : '')}>
-                                                Blog
+                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/es/articulos">
+                                            <a className={'nav-link ' + (location.pathname === "/es/articulos" || location.pathname === "/es/articulos/[blogDetail]" ? 'active' : '')}>
+                                                Artículos
                                             </a>
                                         </Link>
                                     </li>
                                     <li className='nav-item mx-lg-2'>
-                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/contact">
-                                            <a className={'nav-link ' + (location.pathname === "/contact" ? 'active' : '')}>
-                                                Contact
+                                        <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/es/contacto">
+                                            <a className={'nav-link ' + (location.pathname === "/es/contacto" ? 'active' : '')}>
+                                                Contacto
                                             </a>
                                         </Link></li>
                                 </ul>
