@@ -38,9 +38,9 @@ export default function BlogDetails(props, router) {
                   </h1> 
  
                     <BreadHero linkhtml={<><ul className='bradcum'> 
-                  <li> <Link href="/es/">Casa</Link> </li>
-                  <li> <Link href="/es/articulos">Articulos</Link> 
-                  </li> <li className='breadcrumb-item active' aria-current="page">
+                  <li><Link href="/es/">Casa</Link> </li>
+                  <li><Link href="/es/articulos">Articulos</Link></li> 
+                  <li className='breadcrumb-item active' aria-current="page">
                   {props.singleblog[0].title}</li> </ul></>} />
 
                 </div>

@@ -59,7 +59,6 @@ export async function getServerSideProps() {
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
-
   var raw = JSON.stringify({
     "id": "",
     "title": "",

@@ -46,8 +46,7 @@ export default function Footer() {
                       <Link href="/es">
                         <span>Casa</span>
                       </Link>
-                    </li>
-
+                    </li> 
                   </ul>
                 </aside>
               </div>
