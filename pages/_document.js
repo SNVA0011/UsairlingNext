@@ -12,10 +12,7 @@ class MyDocument extends Document {
     const { lang } = this.props;
     return (
       <Html lang={lang}>         
-        <Head>
-
-        <script src="https://kit.fontawesome.com/a692cf9fd8.js" crossorigin="anonymous"></script>
-
+        <Head> 
           {/* <!-- Google Tag Manager --> */}
           <script dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

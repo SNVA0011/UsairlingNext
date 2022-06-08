@@ -13,8 +13,7 @@ export default function Airline(props) {
     window.scrollTo(0, 0)
   }, [])
 
-  console.log('props.singleflight-', props.singleflight)
-
+ 
   return (
     <>
    <Header />

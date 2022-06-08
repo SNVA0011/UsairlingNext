@@ -29,17 +29,17 @@ export default function Home(props) {
           <PopularDestinations />
 
 
-          <div class="blogs">
-            <div class="container">
-              <h2 class="title title-border-bottom align-center offset-item animate">De nuestro blog</h2>
+          <div className="blogs">
+            <div className="container">
+              <h2 className="title title-border-bottom align-center offset-item animate">De nuestro blog</h2>
             </div>
-            <div class="news__content offset-item animate">
+            <div className="news__content offset-item animate">
               <BlogTile allbloglist={props.allbloglist} showitem={3} />
             </div>
             <div className='container'>
-              <div class="align-center button-wrap mt-3">
+              <div className="align-center button-wrap mt-3">
                 <Link href={`/es/articulos`}>
-                  <a class="btn btn-border  btn-lg-readmore">
+                  <a className="btn btn-border  btn-lg-readmore">
                     Ver más
                   </a>
                 </Link>

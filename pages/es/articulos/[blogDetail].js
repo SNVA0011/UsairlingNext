@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Container from 'react-bootstrap/Container' 
+import Container from 'react-bootstrap/Container'
 import Link from "next/link"
 import Footer from '../../../component/es/Footer';
 import Header from "../../../component/es/Navbar";
@@ -16,17 +16,17 @@ export default function BlogDetails(props, router) {
 
   return (
     <>
-      <Head>
-        <title>{props.singleblog[0].title}</title>
-        <meta name="description" content={props.singleblog[0].description} />
-        <meta name="keywords" content={props.singleblog[0].keywords} />
-        <link rel="canonical" href={'https://www.usairling.com/es/articulos/' + props.singleblog[0].titleUrl} />
-      </Head>
-
       <Header />
 
-      {
-        props.singleblog[0] != '' ?
+      {props.singleblog.length === 0 ? <Pageerror />:
+        <>
+          <Head>
+            <title>{props.singleblog[0].title}</title>
+            <meta name="description" content={props.singleblog[0].description} />
+            <meta name="keywords" content={props.singleblog[0].keywords} />
+            <link rel="canonical" href={'https://www.usairling.com/es/articulos/' + props.singleblog[0].titleUrl} />
+          </Head>
+
 
           <div className='blogadda'>
 
@@ -35,13 +35,13 @@ export default function BlogDetails(props, router) {
                 <div className="page-title__content">
                   <h1 className="page-title__name">
                     {props.singleblog[0].title}
-                  </h1> 
- 
-                    <BreadHero linkhtml={<><ul className='bradcum'> 
-                  <li><Link href="/es/">Casa</Link> </li>
-                  <li><Link href="/es/articulos">Articulos</Link></li> 
-                  <li className='breadcrumb-item active' aria-current="page">
-                  {props.singleblog[0].title}</li> </ul></>} />
+                  </h1>
+
+                  <BreadHero linkhtml={<><ul className='bradcum'>
+                    <li><Link href="/es/">Casa</Link> </li>
+                    <li><Link href="/es/articulos">Articulos</Link></li>
+                    <li className='breadcrumb-item active' aria-current="page">
+                      {props.singleblog[0].title}</li> </ul></>} />
 
                 </div>
               </div>
@@ -67,13 +67,15 @@ export default function BlogDetails(props, router) {
             </div>
 
           </div>
-
-          : <Pageerror />
+        </>
       }
 
 
-      <Footer />
 
+
+
+
+      <Footer />
 
     </>
   )

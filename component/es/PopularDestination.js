@@ -8,7 +8,7 @@ export default function PopularDestinations() {
 			{/* PopularDestinations */}
 			<div className="cities">
 				<div className="container">
-					<h2 class="title title-border-bottom align-center offset-item animate">Aerolíneas populares</h2>
+					<h2 className="title title-border-bottom align-center offset-item animate">Aerolíneas populares</h2>
 					<div className="cities__contentt">
 						<div className="row">
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">

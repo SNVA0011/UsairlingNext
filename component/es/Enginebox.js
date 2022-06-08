@@ -19,18 +19,18 @@ export default function Enginebox(props) {
                 <h1 className="site-banner__title Engine-Discover-with text-capitalize">Descubre el mejor vuelo con nosotras</h1>
                 <form action="#" className="site-banner__search layout-02 ">
                   <div className="field-input">
-                    <input className="site-banner__search__input open-suggestion" id="s" type="text" placeholder="De ciudad" autocomplete="off" />
+                    <input className="site-banner__search__input open-suggestion" id="s" type="text" placeholder="De ciudad"  />
                     <div className="search-suggestions name-suggestions">
                     </div>
                   </div>
                   <div className="field-input">
-                    <input className="site-banner__search__input open-suggestion" id="loca" type="text" name="where" placeholder="a la ciudad" autocomplete="off" />
+                    <input className="site-banner__search__input open-suggestion" id="loca" type="text" name="where" placeholder="a la ciudad"  />
                     <div className="search-suggestions location-suggestions">
 
                     </div>
                   </div>
                   <div className="field-submit">
-                    <button aria-label="submit search" type='submit'><i class="bi bi-search"></i></button>
+                    <button aria-label="submit search" type='submit'><i className="bi bi-search"></i></button>
                   </div>
                 </form>
               </div>

@@ -23,11 +23,11 @@ export default function Terms() {
 
             <Header />
 
-            <div class="page-title page-title--small align-left" >
-                <div class="container">
-                    <div class="page-title__content">
-                        <h1 class="page-title__name">Política de privacidad</h1>
-                        <p class="page-title__slogan">Te digo privacidad</p>
+            <div className="page-title page-title--small align-left" >
+                <div className="container">
+                    <div className="page-title__content">
+                        <h1 className="page-title__name">Política de privacidad</h1>
+                        <p className="page-title__slogan">Te digo privacidad</p>
                     </div>
                 </div>
                 <BreadHero linkhtml={<><ul className='bradcum'> <li > <Link href="/es/">Casa</Link> </li> <li className='breadcrumb-item active' aria-current="page"> Privacidad</li> </ul></>} />
