@@ -10,7 +10,7 @@ export default function Enginebox(props) {
         <div className='row align-items-center flex-lg-row-reverse'>
           <div className='col-lg-6 col-12 d-none d-lg-block  my-5'>
             <Image src="/images/our-features-travel.png" alt="our-features-travel"
-              className='our-features-travel' width="570" height="499" />
+              className='our-features-travel' width={570} height={499} />
           </div>
 
           <div className='col-lg-6 col-12'>

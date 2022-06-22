@@ -1,5 +1,7 @@
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
+
 
 export default function Footer() {
   return (
@@ -29,11 +31,11 @@ export default function Footer() {
               </div>
               <div className="col-lg-3">
                 <aside className="footer__top__nav">
-                  <h3>Company</h3>
-                  <ul>
-                    <li><Link href="/about-us">About Us</Link></li>
+                  <h3>Useful Links</h3>
+                  <ul> 
                     <li><Link href="/blog">Blog</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
+                    <li><Link href="/flights">Flights</Link></li>
+               
                     <li className="d-none">
                       <Link href="/">
                         <a className='ripple-effbtn d-inline-block'>
@@ -54,8 +56,10 @@ export default function Footer() {
               </div>
               <div className="col-lg-3">
                 <aside className="footer__top__nav">
-                  <h3>Support</h3>
+                  <h3>Others</h3>
                   <ul>
+                  <li><Link href="/about-us">About Us</Link></li>
+                  <li><Link href="/contact">Contact</Link></li>
                     <li><Link href="/privacy">Privacy Policy</Link></li>
                     <li><Link href="/terms">Terms and Condition</Link></li>
                     {/* <li><Link href="/site-map">Sitemap</Link></li> */}
@@ -95,6 +99,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer__bottom">
+          <div className="text-center mb-3">
+              <Image src='/images/card-logos-footer.png' alt='logo' width={780} height={58}></Image>
+            </div>
             <p className="footer__bottom__copyright">2022 © <Link href="/">Usairling</Link>. All rights reserved.</p>
           </div>
         </div>

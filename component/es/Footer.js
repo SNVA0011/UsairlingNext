@@ -1,9 +1,10 @@
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
+
 
 export default function Footer() {
   return (
-
     <>
       <section className="banner-contact">
         <div className="container">
@@ -31,11 +32,11 @@ export default function Footer() {
               </div>
               <div className="col-lg-3">
                 <aside className="footer__top__nav">
-                  <h3>Empresa</h3>
-                  <ul>
-                    <li><Link href="/es/sobre-nosotras"  >Sobre nosotros</Link></li>
-                    <li><Link href="/es/articulos"  >Artículos</Link></li>
-                    <li><Link href="/es/contacto" title="Contact">Contacto</Link></li>
+                  <h3>Enlaces útiles</h3>
+                  <ul> 
+                    <li><Link href="/es/articulos">Artículos</Link></li>
+                    <li><Link href="/es/vuelos">Vuelos</Link></li>
+                
                     <li className="d-none">
                       <Link href="/">
                         <span>Home</span>
@@ -46,14 +47,16 @@ export default function Footer() {
                       <Link href="/es">
                         <span>Casa</span>
                       </Link>
-                    </li> 
+                    </li>
                   </ul>
                 </aside>
               </div>
               <div className="col-lg-3">
                 <aside className="footer__top__nav">
-                  <h3>Apoyo</h3>
+                  <h3>Otros</h3>
                   <ul>
+                  <li><Link href="/es/sobre-nosotras"  >Sobre nosotros</Link></li>
+                  <li><Link href="/es/contacto" title="Contact">Contacto</Link></li>
                     <li><Link href="/es/privacidad" title="Contact" >Política de privacidad</Link></li>
                     <li><Link href="/es/terminos" title="terminos" >Términos y Condiciones</Link></li>
                     {/* <li><Link href="/es/site-map" title="Contact" >
@@ -68,24 +71,24 @@ mapa del sitio</Link></li> */}
                   <p>Email: <a href="mailto:support@Usairling.com<" className="__cf_email__" target="_blank">support@Usairling.com</a></p>
                   {/* <p>Phone: 1 (00) 832 2342</p> */}
                   <ul>
-                  <li className="facebook">
+                    <li className="facebook">
                       <a title="Facebook" href="https://www.facebook.com/USAirling" target="_blank">
-                      <i className="bi bi-facebook"></i>
+                        <i className="bi bi-facebook"></i>
                       </a>
                     </li>
                     <li className="twitter">
                       <a title="Twitter" href="https://www.twitter.com/USAirling" target="_blank">
-                      <i className="bi bi-twitter"></i>
+                        <i className="bi bi-twitter"></i>
                       </a>
                     </li>
                     <li className="youtube">
                       <a title="pinterest" href="https://www.pinterest.com/usairling" target="_blank">
-                      <i className="bi bi-pinterest"></i>
+                        <i className="bi bi-pinterest"></i>
                       </a>
                     </li>
                     <li className="instagram">
                       <a title="Instagram" href="https://www.instagram.com/usairling" target="_blank">
-                      <i className="bi bi-instagram"></i>
+                        <i className="bi bi-instagram"></i>
                       </a>
                     </li>
                   </ul>
@@ -94,6 +97,9 @@ mapa del sitio</Link></li> */}
             </div>
           </div>
           <div className="footer__bottom">
+            <div className="text-center mb-3">
+              <Image src='/images/card-logos-footer.png' alt='logo' width={780} height={58}></Image>
+            </div>
             <p className="footer__bottom__copyright">2022 © <Link href="/es/">Usairling</Link>.
               Reservados todos los derechos.</p>
           </div>

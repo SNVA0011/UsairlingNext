@@ -30,7 +30,7 @@ export default function Blog(props) {
                           {/* <ul className="post__category">
                             <li>  <span>{(new Date(items.posttime)).getDate() + "/" + ((new Date(items.posttime)).getMonth() + 1) + "/" + (new Date(items.posttime)).getFullYear()}</span></li>
                           </ul> */}
-                          <h3 className="post__title">{items.title}</h3>
+                          <h3 className="post__title">{items.heading}</h3>
                           <p>{items.description}</p>
                           <Link href={`/es/articulos/${items.titleUrl}`}>
                             <a className='image_area_partition  btn mt-3'>Lee Mas</a>
@@ -49,7 +49,7 @@ export default function Blog(props) {
                             {/* <ul className="post__category">
                               <li>  <span>{(new Date(items.posttime)).getDate() + "/" + ((new Date(items.posttime)).getMonth() + 1) + "/" + (new Date(items.posttime)).getFullYear()}</span></li>
                             </ul> */}
-                            <h3 className="post__title">{items.title}</h3>
+                            <h3 className="post__title">{items.heading}</h3>
                             <p>{items.description}</p>
                             <Link href={`/es/articulos/${items.titleUrl}`}>
                               <a className='image_area_partition  btn mt-3'>Lee Mas</a>

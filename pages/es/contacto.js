@@ -24,7 +24,7 @@ export default function ContactUs() {
 				<div className="container">
 					<div className="page-title__content">
 						<h1 className="page-title__name">Contacta con nosotros</h1>
-						<p className="page-title__slogan">Cuéntanos Contáctanos</p>
+						<p className="page-title__slogan">Cuéntanos contáctanos</p>
 					</div>
 				</div>
 				<BreadHero
@@ -55,8 +55,7 @@ export default function ContactUs() {
 									<h2>Nuestras Oficinas</h2>
 									<div className="contact-box">
 										<h3>USA</h3>
-										<p>W Ray Rd, Chandler, AZ 85226 </p>
-
+										<p>48437, HC 4 AGUADILLA PR 00603-9710 USA</p> 
 										<a href="#" title="Get Direction">Get Direction</a>
 									</div>
 									<div className="contact-box">

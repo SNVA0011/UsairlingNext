@@ -24,7 +24,7 @@ export default function ContactUs() {
 				<div className="container">
 					<div className="page-title__content">
 						<h1 className="page-title__name">Contact Us</h1>
-						<p className="page-title__slogan">Tell you COntact Us</p>
+						<p className="page-title__slogan">Tell you contact us</p>
 					</div>
 				</div>
 				<BreadHero
@@ -54,9 +54,8 @@ export default function ContactUs() {
 								<div className="contact-text">
 									<h2>Our Offices</h2>
 									<div className="contact-box">
-										<h3>London (HQ)</h3>
-										<p>Unit TAP.E, 80 Long Lane, London, SE1 4GT</p>
-
+										<h3>USA</h3>
+										<p>48437, HC 4 AGUADILLA PR 00603-9710 USA</p>  
 										<a href="#" title="Get Direction">Get Direction</a>
 									</div>
 									<div className="contact-box">

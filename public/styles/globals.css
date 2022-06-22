@@ -82,6 +82,8 @@ svg{transition:all .3s ease-in-out 0s;-moz-transition:all .3s ease-in-out 0s;-o-
 input[type=text]{border:1px solid #5d5d5d;padding:8px 15px;font-size:14px;color:#757575;font-style:italic;border-radius:0;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0)}
 input[type=text]:focus{border-color:#f4834a;outline:0}
 input[type=email]{border:1px solid #5d5d5d;padding:8px 15px;font-size:14px;color:#757575;font-style:italic;border-radius:0;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0)}
+.form-underline input:focus,
+.form-underline textarea:focus,
 input[type=email]:focus{border-color:#f4834a;outline:0}
 input[type=password]{border:1px solid #5d5d5d;padding:8px 15px;font-size:14px;color:#757575;font-style:italic;border-radius:0;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0)}
 input[type=password]:focus{border-color:#f4834a;outline:0}
@@ -979,7 +981,7 @@ a.place__comments__reply i{display:inline-block;vertical-align:middle;margin-rig
 .form-underline textarea::-webkit-input-placeholder{font-size:15px;font-style:normal;color:#8d8d8d;font-family:Poppins,sans-serif}
 .form-underline textarea:-ms-input-placeholder{font-size:15px;font-style:normal;color:#8d8d8d;font-family:Poppins,sans-serif}
 .form-underline textarea::placeholder{font-size:15px;font-style:normal;color:#8d8d8d;font-family:Poppins,sans-serif}
-.form-underline input{width:100%;height:40px;line-height:40px;border-radius:0;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);border:0;padding:0;border-bottom:2px solid #2d2d2d;margin-bottom:20px;font-style:normal;background-color:inherit}
+.form-underline input{width:100%;height:40px;line-height:40px;border-radius:0;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);border:0;padding:0;border-bottom:2px solid #2d2d2d;margin-bottom:20px;font-style:normal;background-color:inherit;outline: none;}
 .form-underline input::placeholder{font-size:15px;font-style:normal;color:#8d8d8d;font-family:Poppins,sans-serif}
 .form-underline input:-ms-input-placeholder{font-size:15px;font-style:normal;color:#8d8d8d;font-family:Poppins,sans-serif}
 .form-underline input::-ms-input-placeholder{font-size:15px;font-style:normal;color:#8d8d8d;font-family:Poppins,sans-serif}
@@ -1736,8 +1738,11 @@ b,strong{font-weight:600}
 .business-main .testimonial .slick-nav>div{top:30%}
 .business-main .testimonial .slick-sliders{max-width:100%}
 .business-main .blogs{background:#f6f6f6;background:-moz-linear-gradient(top,#f6f6f6 2%,#fff 100%);background:-webkit-linear-gradient(top,#f6f6f6 2%,#fff 100%);background:linear-gradient(to bottom,#f6f6f6 2%,#fff 100%)}
-.btn-lg-readmore{width:100%;max-width:200px;padding:12px 6px;border-radius:80px;border:solid 1px #f58f5c;background:#fff;color:#f4834a;font-weight:600;font-size:18px}
-.btn-lg-readmore:hover{background:#fef5f0}
+.btn.btn-lg-readmore{width:100%;max-width:200px;padding:12px 6px;border-radius:80px;border:solid 1px #f58f5c;background:#fff;color:#f4834a;font-weight:600;font-size:18px}
+.btn.btn-lg-readmore:hover{background:#fef5f0}
+.btn.btn-lg-readmore:focus{
+    color: #f4834a;
+}
 .business-main .blogs:before{content:'';display:none}
 .business-main .blogs .post__title a{color:#2d2d2d}
 .business-main .blogs .post__category a{color:#2d2d2d;opacity:.9;font-size:15px;line-height:1.53}
@@ -1996,7 +2001,7 @@ b,strong{font-weight:600}
 .footer__top__nav--contact li.twitter a{background-color:#1da1f2}
 .footer__top__nav--contact li.youtube a{background-color:#cd201f}
 .footer__top__nav--contact li.instagram a{background-color:#262626}
-.footer__bottom__copyright{text-align:center;font-size:14px;color:#5d5d5d}
+.footer__bottom__copyright{text-align:center;font-size:14px;color:#5d5d5d;font-weight: 500;}
 .xdsoft_datetimepicker.on .xdsoft_datepicker{width:100%;padding-right:8px}
 .xdsoft_datetimepicker.on .xdsoft_timepicker{width:100%;padding-right:8px}
 .xdsoft_datetimepicker.on .xdsoft_timepicker button{margin-left:auto;margin-right:auto}

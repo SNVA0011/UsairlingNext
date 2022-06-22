@@ -12,7 +12,7 @@ export default function BlogDetails(props, router) {
   const location = useRouter();
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [])
+  }, []) 
 
   return (
     <>
@@ -34,7 +34,7 @@ export default function BlogDetails(props, router) {
               <div className="container">
                 <div className="page-title__content">
                   <h1 className="page-title__name">
-                    {props.singleblog[0].title}
+                  {props.singleblog[0].heading}
                   </h1>
 
                   <BreadHero linkhtml={<><ul className='bradcum'>
