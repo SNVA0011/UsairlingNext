@@ -15,9 +15,9 @@ export default function Blog(props) {
   return (
     <>
       <Head>
-        <title>Blog - Airlingster</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <title>Usairling | Get the latest updates is Articles</title>
+        <meta name="description" content="Get the latest updates on blogs for flights, cars, hotel reservations, etc." />
+        <meta name="keywords" content="flight booking updates, car booking updates, hotel booking updates" />
         <link rel="canonical" href={'https://www.usairling.com/blog'} />
       </Head>
 
