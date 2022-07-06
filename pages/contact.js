@@ -55,7 +55,7 @@ export default function ContactUs() {
 									<h2>Our Offices</h2>
 									<div className="contact-box">
 										<h3>USA</h3>
-										<p>48437, HC 4 AGUADILLA PR 00603 USA</p>  
+										<p>10-S511 Echo Ln, Willowbrook, Illinois(IL), 60527</p>  
 										<a href="#" title="Get Direction">Get Direction</a>
 									</div>
 									<div className="contact-box">
