@@ -35,7 +35,8 @@ export default function Footer() {
                   <ul> 
                     <li><Link href="/blog">Blog</Link></li>
                     <li><Link href="/flights">Flights</Link></li>
-               
+                    <li><Link href="/baggage-policy">Baggage Policy</Link></li>
+
                     <li className="d-none">
                       <Link href="/">
                         <a className='ripple-effbtn d-inline-block'>

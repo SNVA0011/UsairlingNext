@@ -36,6 +36,7 @@ export default function Footer() {
                   <ul> 
                     <li><Link href="/es/articulos">Artículos</Link></li>
                     <li><Link href="/es/vuelos">Vuelos</Link></li>
+                    <li><Link href="/es/politica-de-equipaje">Politica de equipaje</Link></li>
                 
                     <li className="d-none">
                       <Link href="/">

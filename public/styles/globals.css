@@ -1607,6 +1607,11 @@ b,strong{font-weight:600}
 .pricing-item .total h4{font-size:16px;font-weight:500;margin-bottom:5px}
 .pricing-item .total span{font-size:18px;font-weight:500;line-height:1.61;color:#2d2d2d;font-family:Poppins,sans-serif}
 .package-review .pricing-item{padding:50px 60px 40px}
+.border.p-3.h-100.rounded-xl {
+    border-radius: 13px;
+    border-color: rgb(119 101 165 / 6%) !important;
+    box-shadow: inset 0 0 0 3px #fff, inset 0 10px 25px 4px rgb(23 25 32 / 1%), 0 7px 14px rgb(0 0 0 / 5%);
+}
 .package-review .pricing-item .btn-change{margin-bottom:0;background-color:#2d2d2d}
 .pricing-inner{margin-bottom:60px}
 .payment-method{text-align:center;margin-bottom:80px}
