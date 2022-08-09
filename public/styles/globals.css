@@ -1964,7 +1964,11 @@ b,strong{font-weight:600}
 .banner-wrap.layout-02 .banner-inner{padding:0;background-color:transparent;max-width:50%}
 .banner-contact{background:#7765a5;background:-moz-linear-gradient(top,#7765a5 0,#53426b 100%);background:-webkit-linear-gradient(top,#7765a5 0,#53426b 100%);background:linear-gradient(to bottom,#7765a5 0,#53426b 100%);padding:75px 0}
 .banner-contact .banner-inner{display:flex;align-items:center;justify-content:space-between}
-.banner-contact .banner-inner h2{font-size:36px;max-width:60%;color:#fff;letter-spacing:.6px}
+.banner-contact .banner-inner h2{    font-size: 24px;
+    max-width: 60%;
+    color: #fff;
+    letter-spacing: .3px;
+    line-height: 1.5;}
 .banner-contact .banner-inner a.btn{background-color:#fff;font-size:15px;max-width:40%;color:#66558a;border:none}
 .footer.layout-03{border-top:0;background-color:#111;text-align:center}
 .footer.layout-03 .footer__top{padding:77px 0 110px}
@@ -2360,13 +2364,13 @@ b,strong{font-weight:600}
 .breadcrumb_area .bradcum{margin-top:5px}
 .enginebanner_sctn .banner-shape-14.w-100,.shape-bottom.bigbanner-wgb svg{height:60px}
 .page-title--small .page-title__content p.page-title__slogan{margin-bottom:20px;margin-top:-7px;letter-spacing:.6px;font-size:14px}
-.banner-contact .banner-inner h2{font-size:28px}
+ 
 .site-header ul.navbar-nav{border-top:solid 1px #d7d6e7;padding-top:6px;margin-top:15px}
 .page-title--small .page-title__content h1{margin-bottom:20px}
 .title{font-size:22px}
 }
 @media (max-width:767px){
-.banner-contact .banner-inner h2{font-size:28px;text-align:center}
+.banner-contact .banner-inner h2{ text-align:center}
 .breadcrumb_area.full-w.text-uppercase.none .container li{padding:6px 0}
 .airplane-iconbx h3.cities__capital{font-size:16px}
 .site-contact .contact-form{padding-right:30px}
