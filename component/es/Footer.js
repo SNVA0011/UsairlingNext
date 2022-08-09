@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-3">
                 <div className="footer__top__info">
-                  <Link href="/">
+                  <Link href="/es/">
                     <a className="footer__top__info__logo">
                       <img src='/images/logo.svg' width={166} height={29} alt="logo" />
                     </a>
@@ -37,6 +37,7 @@ export default function Footer() {
                     <li><Link href="/es/articulos">Artículos</Link></li>
                     <li><Link href="/es/vuelos">Vuelos</Link></li>
                     <li><Link href="/es/politica-de-equipaje">Politica de equipaje</Link></li>
+                    <li><Link href="/es/vuelos-baratos">Vuelos Baratos</Link></li>
                 
                     <li className="d-none">
                       <Link href="/">

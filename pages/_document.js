@@ -34,6 +34,9 @@ class MyDocument extends Document {
           {/* <!-- End Google Tag Manager (noscript) --> */}
           <Main />
           <NextScript />
+
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
         </body>
       </Html>
     );

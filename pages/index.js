@@ -5,6 +5,7 @@ import Footer from '../component/Footer'
 import Header from '../component/Navbar'
 import BlogTile from '../component/BlogTile';
 import Link from "next/link"
+import DestinationLists from '../component/DestinationLists'
 
 export default function Home(props) {
   return (
@@ -25,7 +26,48 @@ export default function Home(props) {
         <main id="main" className="site-main overflow">
           <Enginebox />
 
-          {/* PopularDestinations */}
+          {/* DestinationLists */}
+          <DestinationLists
+            title="Destination Lists"
+            subtitle="Explore the destination"
+
+            data={
+              [
+                {
+                  'place': 'Aruba',
+                  'placeimg': '/images/tour-destination-1.jpg',
+                  'placelink': '/destinations/sumptuous-deals-to-aruba',
+                  'placetitle': 'Sumptuous Deals to Aruba'
+                },
+                {
+                  'place': 'Cartagena',
+                  'placeimg': '/images/tour-destination-2.jpg',
+                  'placelink': '/destinations/sumptuous-deals-to-cartagena',
+                  'placetitle': 'Sumptuous Deals to Cartagena'
+                },
+                {
+                  'place': 'Santiago',
+                  'placeimg': '/images/tour-destination-3.jpg',
+                  'placelink': '/destinations/top-things-to-know-about-santiago',
+                  'placetitle': 'Top things to know about Santiago'
+                },
+                {
+                  'place': 'Quito',
+                  'placeimg': '/images/tour-destination-4.jpg',
+                  'placelink': '/destinations/top-things-to-learn-about-quito',
+                  'placetitle': 'Top things to learn about Quito'
+                },
+                {
+                  'place': 'Territor',
+                  'placeimg': '/images/tour-destination-5.jpg',
+                  'placelink': '/destinations/explore-the-bolivian-territor',
+                  'placetitle': 'Explore the Bolivian Territo'
+                }
+              ]
+            }
+          />
+
+          {/* Popular Airlines */}
           <PopularDestinations />
 
           {/* <Testimonial/> */}
@@ -42,7 +84,7 @@ export default function Home(props) {
                 <Link href={`/blog`}>
                   <a className="btn btn-border btn-lg-readmore">View more</a>
                 </Link>
-                </div>
+              </div>
             </div>
 
           </div>

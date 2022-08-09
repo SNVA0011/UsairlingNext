@@ -6,6 +6,8 @@ import Link from "next/link"
 
 
 export default function Blog(props) {
+
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -61,7 +63,8 @@ export default function Blog(props) {
                   }
 
 
-                </Row> : 'No items found !'
+                </Row> : <p className='text-center'>No se encontraron artículos !</p>
+
             }
           </Container>
         </div>

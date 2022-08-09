@@ -105,7 +105,7 @@ export default function Flights(props) {
                     </Col>
                   ))}
                 </Row> 
-                : 'No items found !'
+                :  <p className='text-center'>No items found !</p>
             }
             </Col>
  

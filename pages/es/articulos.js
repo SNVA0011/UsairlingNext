@@ -35,7 +35,7 @@ export default function Blog(props) {
             </div>
             <BreadHero linkhtml={<>
               <ul className='bradcum'> 
-                <li><Link href="/es/">Home</Link> </li> 
+                <li><Link href="/es/">Casa</Link> </li> 
                 <li className='breadcrumb-item active' aria-current="page">Artículos</li>
               </ul>
             </>} />
