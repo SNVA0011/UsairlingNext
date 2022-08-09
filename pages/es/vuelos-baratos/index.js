@@ -87,18 +87,42 @@ export default function Flights(props) {
                   <strong>Los mejores destinos de viaje económicos para 2022-23</strong>
                 </p>
                 <ul className="row mb-0">
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">San Diego</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">Costa Rica</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">San Francisco</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">montenegro</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">orlando</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">Bogotá</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">Georgia</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">Cancún</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">houston</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">bali</li>
-                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">Rio de Janeiro</li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    San Dieg
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Costa Rica
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    San Francisco
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Montenegro
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Orlando
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Bogota
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Georgia
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Cancun
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Houston
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Bali
+                  </li>
+                  <li className="col-12 col-sm-6 col-md-4 col-xl-3">
+                    Rio de Janeiro
+                  </li>
                 </ul>
+
+
                 <h2 className="mt-4 mb-2">
                   ¿Cómo puedo obtener vuelos baratos en cualquier lugar?&nbsp;
                 </h2>

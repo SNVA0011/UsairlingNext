@@ -56,7 +56,7 @@ export default function Header() {
                                     </li>
                                     <li className='nav-item mx-lg-2'>
                                         <Link onClick={() => window.innerWidth < 1200 ? setExpanded(expanded ? false : "expanded") : ''} href="/es/vuelos-baratos">
-                                            <a className={'nav-link ' + (location.pathname === "/es/vuelos-baratos" ? 'active' : '')}>
+                                            <a className={'nav-link ' + (location.pathname === "/es/vuelos-baratos" || location.pathname === "/es/vuelos-baratos/[single]" ? 'active' : '')}>
                                             Vuelos Baratos
                                             </a>
                                         </Link>
