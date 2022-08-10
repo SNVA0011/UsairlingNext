@@ -2480,7 +2480,7 @@ b,strong{font-weight:600}
     box-shadow: 0 0 30px rgb(0 0 0 / 8%);
 }
 .recent-destinations .card.active h5.card-title.mb-0{
-    font-weight: 700;
+    font-weight: 600;
 }
 i.bi.rpost-right {
     font-size: 13px;
