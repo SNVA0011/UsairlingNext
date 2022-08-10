@@ -2504,7 +2504,7 @@ i.bi.rpost-right {
     -webkit-transform: scale(1.15);
 }
 
-
+ 
 /*============ responsive ============*/
 @media (min-width:992px){
 .navbar-light .navbar-nav .nav-link.active{box-shadow:0 -3px 1px -1px #7765a5 inset;color:#7765a5;font-weight:600}
