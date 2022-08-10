@@ -2408,8 +2408,8 @@ b,strong{font-weight:600}
 .recent-destinations .title-dlist h3 {
     position: relative;
     font-size: 21px;
-    padding-bottom: 18px; 
-    margin-bottom: 18px;
+    padding-bottom: 11px;
+    margin-bottom: 8px;
     border-bottom: solid 3px #e9ebeb;
 }
 .recent-destinations .title-dlist h3::before{
