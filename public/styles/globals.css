@@ -2444,7 +2444,11 @@ b,strong{font-weight:600}
     font-size: 11px;
     margin-top: 8px;
     line-height: normal;
-    background: #7765a5;
+    background: rgb(84,70,120);
+    background: -moz-linear-gradient(-45deg,  rgba(84,70,120,1) 0%, rgba(119,101,165,1) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(84,70,120,1) 0%,rgba(119,101,165,1) 100%);
+    background: linear-gradient(135deg,  rgba(84,70,120,1) 0%,rgba(119,101,165,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#544678', endColorstr='#7765a5',GradientType=1 );    
 }
 .recent-destinations p.card-text .bi.bi-geo-alt {
     position: relative;
