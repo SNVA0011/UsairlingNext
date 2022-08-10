@@ -59,7 +59,7 @@ export default function Home(props) {
                   'placetitle': 'Lo mejor para aprender sobre Quito'
                 },
                 {
-                  'place': 'territorio',
+                  'place': 'Territorio',
                   'placeimg': '/images/tour-destination-5.jpg',
                   'placelink': '/es/destinos/explora-el-territorio-boliviano',
                   'placetitle': 'Explora el territorio boliviano'
@@ -76,7 +76,7 @@ export default function Home(props) {
             <div className="container">
               <h2 className="title title-border-bottom align-center offset-item animate">De nuestro blog</h2>
             </div>
-            <div className="news__content offset-item animate">
+            <div className="news__content offset-item animate home">
               <BlogTile allbloglist={props.allbloglist} showitem={3} />
             </div>
             <div className='container'>

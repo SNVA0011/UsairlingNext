@@ -137,7 +137,7 @@ export default function politicadeequipaje(props) {
 
                     <Row className='alldeals-vi justify-content-center'>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -149,7 +149,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -161,7 +161,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -173,7 +173,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -185,7 +185,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -198,7 +198,7 @@ export default function politicadeequipaje(props) {
                         </Col>
 
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -210,7 +210,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -222,7 +222,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -234,7 +234,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -246,7 +246,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -260,7 +260,7 @@ export default function politicadeequipaje(props) {
 
 
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -272,7 +272,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -284,7 +284,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -296,7 +296,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -308,7 +308,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -321,7 +321,7 @@ export default function politicadeequipaje(props) {
                         </Col>
 
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -333,7 +333,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -345,7 +345,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
@@ -357,7 +357,7 @@ export default function politicadeequipaje(props) {
                             </Link>
                         </Col>
                         <Col xs={12} xl={3} lg={4} sm={6} className="mb-4">
-                            <Link href={''}>
+                            <Link href={'#nolink'}>
                                 <a className="airplane-iconbx sm d-flex align-items-center h-100">
                                     <div className="cities__thumb hover__box__thumb">
                                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />

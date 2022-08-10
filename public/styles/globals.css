@@ -1516,12 +1516,18 @@ b,strong{font-weight:600}
 .main-primary .top-area{display:-webkit-box;display:-ms-flexbox;display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}
 .main-primary .top-area .result-count{font-size:16px;font-weight:500;line-height:1.5;color:#2d2d2d;font-family:Poppins,sans-serif}
 .airplane-iconbx,.airplane-iconbx .hover__box__thumb{-webkit-transition:all .2s cubic-bezier(.5, 0, 0, 1.25);transition:all .2s cubic-bezier(.5, 0, 0, 1.25)}
-.airplane-iconbx{text-align:center;padding:15px;border-radius:18px;box-shadow:inset 0 0 0 3px #fff,inset 0 10px 25px 4px rgb(23 25 32 / 2%),0 7px 14px rgb(0 0 0 / 9%);-webkit-transition:all .2s cubic-bezier(.5, 0, 0, 1.25);transition:all .2s cubic-bezier(.5, 0, 0, 1.25);background:#fff}
+.airplane-iconbx{      text-align: center;
+    padding: 15px;
+    border-radius: 18px;
+    border: solid 2px #fef2ed;
+    -webkit-transition: all .2s cubic-bezier(.5, 0, 0, 1.25);
+    transition: all .2s cubic-bezier(.5, 0, 0, 1.25);
+    background: #fff;}
 .airplane-iconbx .hover__box__thumb{transform:scale(.8);-webkit-transform:scale(.8);-o-transform:scale(.8);-moz-transform:scale(.8);-ms-transform:scale(.8);overflow:visible;background:rgb(244 131 74 / 10%);border-radius:50%;width:58px;min-width:58px}
 .airplane-iconbx:hover .hover__box__thumb{transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1)}
 .airplane-iconbx:hover{background:rgb(244 131 74 / 5%);box-shadow:none}
 .airplane-iconbx:hover h3.cities__capital{color:#f4834a}
-.airplane-iconbx h3.cities__capital{color:#000;font-size:18px;margin:0;padding-left:20px;text-transform:none;text-align:left}
+.airplane-iconbx h3.cities__capital{color:#000;font-size:17px;margin:0;padding-left:12px;text-transform:none;text-align:left}
 .airplane-iconbx .hover__box__thumb img{overflow:visible;border-radius:0}
 .main-primary .top-area-filter .place-layout a.active{color:#f4834a}
 .main-primary .top-area-filter .place-layout a{padding:0 2px}
@@ -1619,8 +1625,7 @@ b,strong{font-weight:600}
 .package-review .pricing-item{padding:50px 60px 40px}
 .border.p-3.h-100.rounded-xl {
     border-radius: 13px;
-    border-color: rgb(119 101 165 / 6%) !important;
-    box-shadow: inset 0 0 0 3px #fff, inset 0 10px 25px 4px rgb(23 25 32 / 1%), 0 7px 14px rgb(0 0 0 / 5%);
+    border-color: rgb(119 101 165 / 6%) !important; 
 }
 .package-review .pricing-item .btn-change{margin-bottom:0;background-color:#2d2d2d}
 .pricing-inner{margin-bottom:60px}
@@ -1753,10 +1758,27 @@ b,strong{font-weight:600}
 .business-main .testimonial .slick-nav>div{top:30%}
 .business-main .testimonial .slick-sliders{max-width:100%}
 .business-main .blogs{background:#fcfcfc ;background:-moz-linear-gradient(top,#fcfcfc  2%,#fff 100%);background:-webkit-linear-gradient(top,#fcfcfc  2%,#fff 100%);background:linear-gradient(to bottom,#fcfcfc  2%,#fff 100%)}
-.btn.btn-lg-readmore{width:100%;max-width:200px;padding:12px 6px;border-radius:80px;border:solid 1px #f58f5c;background:#fff;color:#f4834a;font-weight:600;font-size:18px}
-.btn.btn-lg-readmore:hover{background:#fef5f0}
+.btn.btn-lg-readmore{
+    width: 100%;
+    max-width: 175px;
+    padding: 11px 6px;
+    border-radius: 80px;
+    border: solid 1px #7664a3;
+    background: #fff;
+    color: #7664a3;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn.btn-lg-readmore:hover{  background: #f8f5ff;}
 .btn.btn-lg-readmore:focus{
-    color: #f4834a;
+    color: #7664a3;
+}
+.mt-3.button-wrap {
+    text-align: center;
+    margin-top: 0px !important;
+}
+.offset-item.animate.home .popular-destination.mb-5 {
+    margin-bottom: 30px !important;
 }
 .business-main .blogs:before{content:'';display:none}
 .business-main .blogs .post__title a{color:#2d2d2d}
@@ -2086,9 +2108,13 @@ b,strong{font-weight:600}
 .blog-inner-box2 p{margin-bottom:10px}
 .popular-destination{margin-bottom:50px}
 .top_airlines_area{background:url('/static/images/bg-plane-bird-img.png') #f7f7f7;background-position:top -330px left,100% 0;background-repeat:no-repeat;background-size:auto;padding:60px 0}
-.airplane-iconbx.sm{background:#fff;padding:15px}
+.airplane-iconbx.sm{    background: #fff;
+    padding: 15px;
+    border-color: #eeeeee;
+    box-shadow: 0 0 10px rgb(0 0 0 / 5%);}
 .airplane-iconbx.sm .hover__box__thumb img{width:46px}
-.airplane-iconbx.sm h3.cities__capital{font-size:16px}
+.airplane-iconbx.sm h3.cities__capital{    font-size: 16px;
+    text-align: right;}
 .airplane-iconbx.sm .hover__box__thumb{min-width: 46px;min-height: 58px;}
 .site-header .dropdown-toggle{background:0 0;color:#343a40;border-color:#ebebeb}
 .site-header .dropdown-toggle.btn-outline-secondary:not(:disabled):not(.disabled).active,.site-header .dropdown-toggle.btn-outline-secondary:not(:disabled):not(.disabled):active,.site-header .show>.dropdown-toggle.btn-outline-secondary.dropdown-toggle{background:#fff;border-color:#7765a5;color:#7765a5;box-shadow:none}
@@ -2107,9 +2133,17 @@ b,strong{font-weight:600}
 .recent-blogsalide li{padding-bottom:15px;margin-bottom:15px;border-bottom:solid 1px #e3e3e3}
 .content-ullist ol,.content-ullist ul{padding-left:23px}
 .content-ullist ol li,.content-ullist ul li{margin-bottom:8px}
-.postreadmore-card{background:#fff;font-weight:500;display:block;font-size:18px;padding:25px;
-    box-shadow:inset 0 0 0 3px #fff, inset 0 10px 25px 4px rgb(23 25 32 / 2%);
-    border-radius:8px;margin-bottom:0;border:solid 1px rgb(66 66 66 / 15%);height:100%}
+.postreadmore-card{
+    background: #fff;
+    font-weight: 500;
+    display: block;
+    font-size: 18px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 5%);
+    border-radius: 8px;
+    margin-bottom: 0;
+    height: 100%;
+}
 .postreadmore-card p{
     color: rgb(108, 117, 125);
     line-height: 1.5;
@@ -2173,8 +2207,7 @@ b,strong{font-weight:600}
 .destination-list .card .card-title{
     min-height: 68px;
 }
-
-
+.recent-destinations .card, 
 .destination-list .img-topwrap::after,
 .destination-list .owl-theme .owl-prev,
  .destination-list .owl-theme .owl-next,
@@ -2248,6 +2281,8 @@ b,strong{font-weight:600}
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+.recent-destinations p.card-text,
 .destination-list .card .card-text {
     font-size: 14px;
     font-weight: 600;
@@ -2289,6 +2324,8 @@ b,strong{font-weight:600}
 .destination-list .card:hover .card-title{
     color: #f37332;
 }
+
+.recent-destinations p.card-text,
 .destination-list .card .card-text {
     color: #ffffff;
     background: rgb(243,115,50);
@@ -2361,11 +2398,123 @@ b,strong{font-weight:600}
 .privacy__policy a:hover {
     color: #0056b3;
 }
- 
+
+.recent-destinations .title-dlist {
+    padding: 0;
+}
+.recent-destinations .title-dlist h3 {
+    position: relative;
+    font-size: 21px;
+    padding-bottom: 18px; 
+    margin-bottom: 18px;
+    border-bottom: solid 3px #e9ebeb;
+}
+.recent-destinations .title-dlist h3::before{
+    content: '';
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -3px;
+    width: 65px;
+    height: 3px;
+    background-color: #7765a5;
+    z-index: 3;
+    border-radius: 40px;
+}
+.recent-destinations img.card-img-top {
+    width: 100%;
+    border-radius: 8px; 
+}
+.recent-destinations .img-hideradius {
+    width: 60px;
+    min-width: 60px;
+}
+.recent-destinations .card-body.flex-grow-1 {
+    padding: 5px 15px;
+}
+.recent-destinations p.card-text {
+    position: static;
+    display: inline-block;
+    padding: 3px 9px;
+    min-width: auto;
+    font-size: 11px;
+    margin-top: 8px;
+    line-height: normal;
+    background: #7765a5;
+}
+.recent-destinations p.card-text .bi.bi-geo-alt {
+    position: relative;
+    top: 1px;
+    font-size: 114%;
+    margin-right: 2px;
+}
+.recent-destinations h5.card-title.mb-0 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.recent-destinations .card {
+    border: none;
+    background-color: #f7f6fa;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+.recent-destinations .card:hover h5.card-title.mb-0{
+    color: #7765a5;
+}
+.recent-destinations .card:hover {
+    background: #fff;
+    box-shadow: 0 0 25px rgb(0 0 0 / 5%);
+}
+.owl-row.ls {
+    margin-top: -26px;
+}
+
+.recent-destinations .card.active{
+    background: #fff; 
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+}
+.recent-destinations .card.active h5.card-title.mb-0{
+    font-weight: 700;
+}
+i.bi.rpost-right {
+    font-size: 13px;
+    color: #fff;
+    background: #7765a5;
+    width: 22px;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    top: 4px;
+}
+
+
 /*============ responsive ============*/
 @media (min-width:992px){
 .navbar-light .navbar-nav .nav-link.active{box-shadow:0 -3px 1px -1px #7765a5 inset;color:#7765a5;font-weight:600}
+.recent-destinations{
+    position: -o-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
 }
+ 
+}
+
+@media (min-width:576px) and (max-width:991px){
+    .recent-destinations .img-hideradius{
+        width: 75px;
+        min-width: 75px;
+    }
+}
+
+
 @media (min-width:1200px){
  .page-title--small{
     padding: 90px 0;
@@ -2395,6 +2544,10 @@ b,strong{font-weight:600}
 .site-header ul.navbar-nav{border-top:solid 1px #d7d6e7;padding-top:6px;margin-top:15px}
 .page-title--small .page-title__content h1{margin-bottom:20px}
 .title{font-size:22px}
+i.bi.rpost-right{
+    top: 1px;
+}
+
 }
 @media (max-width:767px){
 .banner-contact .banner-inner h2{ text-align:center}
@@ -2438,6 +2591,10 @@ b,strong{font-weight:600}
 .page-title--small .page-title__content h1{
     font-size: 26px;
 }
+.owl-row.blogscroll-y {
+    max-height: 350px;
+    overflow-y: auto;
+}
 }
 @media (max-width:575px){
 .enginebanner_sctn .banner-shape-14.w-100,.popular-destination.travellist .ppt-clistaff.mt-shapeneed svg,.shape-bottom.bigbanner-wgb svg{height:40px}
@@ -2477,6 +2634,7 @@ b,strong{font-weight:600}
     font-size: 24px;
     text-align: center;
 }
+
 .title-dlist p {
     text-align: center; 
 }
@@ -2488,6 +2646,17 @@ b,strong{font-weight:600}
     height: 50px;
     line-height: 47px;
     font-size: 24px;
+}
+ 
+i.bi.rpost-right {
+    font-size: 9px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    top: 2px;
+}
+.recent-destinations .card-body.flex-grow-1.rpost-heading {
+    padding-left: 10px;
 }
 .destination-list .owl-theme .owl-prev {
     margin-right: 24px;

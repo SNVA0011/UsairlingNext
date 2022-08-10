@@ -11,18 +11,16 @@ export default function DestinationLists(props) {
         nav: true,
         dots: false,
         navText: ["<i class='bi bi-arrow-left'></i>", "<i class='bi bi-arrow-right'></i>"],
+        autoplay: true, 
+        autoplayTimeout:2100, 
         responsive: {
             0: {
                 items: 1,
-                margin: 10,
-                autoplay: true,
-                autoplayHoverPause: true
+                margin: 10, 
             },
             476: {
                 items: 2,
-                margin: 10,
-                autoplay: true,
-                autoplayHoverPause: true
+                margin: 10, 
             },
             992: {
                 items: 3,
@@ -47,7 +45,7 @@ export default function DestinationLists(props) {
                             <p>{props.title}</p>
                             <h2>{props.subtitle}</h2>
                         </div>
-                        <div className="owl-row"> 
+                        <div className="owl-row ls"> 
 
                         <br></br>
                             <OwlCarousel options={options}>

@@ -41,7 +41,7 @@ export default function Blog(props) {
                     ))
                     :
                     props.allbloglist.filter((items) => items.status === 'Active').map((items, i) => (
-                      <Col xs={12} md={6} xl={4} className="mb-3"> 
+                      <Col xs={12} md={6} xl={4} className="mb-4"> 
                         <div className='post postreadmore-card hover__box'> 
                           <div className='wrapper'> 
                           </div> 

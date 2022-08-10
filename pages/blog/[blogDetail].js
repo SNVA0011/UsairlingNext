@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Container from 'react-bootstrap/Container'
 import Link from "next/link"
 import Footer from '../../component/Footer';
 import Header from "../../component/Navbar";
@@ -7,13 +6,18 @@ import BreadHero from '../../component/BreadHero';
 import Head from 'next/head'
 import { useRouter } from 'next/router';
 import Pageerror from "../../component/Pageerror"
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import RecentDestination from '../../component/RecentDestination';
 
 export default function BlogDetails(props, router) {
   const location = useRouter();
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
- 
+
+
   return (
     <>
 
@@ -51,20 +55,34 @@ export default function BlogDetails(props, router) {
 
             <div className='popular-destination blogaddalist details full-w'>
               <Container>
-                <div className='blogaddalist-round about-uspage privacy__policy full-w pyblock-80'>
-                  <div className='blogaddalist-inner'>
+                <Row>
+                  <Col xs={12} lg={8}>
+                    <div className='blogaddalist-round about-uspage privacy__policy full-w pyblock-80'>
+                      <div className='blogaddalist-inner'>
 
-                    <div className="blog-inner-box2">
-                      {
-                        props.singleblog[0].content === '' ?
-                          <p className='pb-2'>No Content found</p>
-                          :
-                          <div dangerouslySetInnerHTML={{ __html: props.singleblog[0].content }}></div>
-                      }
+                        <div className="blog-inner-box2">
+                          {
+                            props.singleblog[0].content === '' ?
+                              <p className='pb-2'>No Content found</p>
+                              :
+                              <div dangerouslySetInnerHTML={{ __html: props.singleblog[0].content }}></div>
+                          }
+                        </div>
+
+                      </div>
                     </div>
+                  </Col>
 
-                  </div>
-                </div>
+                  <Col xs={12} lg={4} className="mt-5 mt-lg-0">
+                    <RecentDestination
+                      title="RECENT BLOGS"
+                      langrecent="en"
+                      recentblog={
+                        props.recentblog.slice(0, 6)
+                      }
+                    />
+                  </Col>
+                </Row>
               </Container>
             </div>
 
@@ -72,7 +90,7 @@ export default function BlogDetails(props, router) {
         </>
       }
 
-   
+
 
       <Footer />
 
@@ -85,10 +103,42 @@ export default function BlogDetails(props, router) {
 
 export async function getServerSideProps(context) {
   const { params } = context
-
-  // single blogDetail 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
+
+  // All Blog
+  var blograw = JSON.stringify({
+    "id": "",
+    "title": "",
+    "titleUrl": "",
+    "content": "",
+    "description": "",
+    "keywords": "",
+    "posttime": "",
+    "status": "",
+    "heading": "",
+    "img_url": "",
+    "siteId": "145",
+    "categoryName": "",
+    "blogdes2": "",
+    "blogTagsName2": "",
+    "extarTag": "",
+    "tfnHeader": "",
+    "tfnFooter1": "",
+    "tfnFooter2": "",
+    "tfnFooter3": "",
+    "tfnPopup": ""
+  });
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: blograw,
+    redirect: 'follow'
+  };
+  const blogres = await fetch("https://cms.travomint.com/travoles-content/showblogdata?authcode=Trav3103s987876", requestOptions)
+  const allblogjson = await blogres.json()
+
+  // single blogDetail  
   var raw = JSON.stringify({
     "id": "",
     "title": "",
@@ -123,7 +173,8 @@ export async function getServerSideProps(context) {
 
   return {
     props: ({
-      singleblog: onejson.response
+      singleblog: onejson.response,
+      recentblog: allblogjson.response
     })
   }
 }

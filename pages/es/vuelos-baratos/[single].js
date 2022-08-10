@@ -13,7 +13,6 @@ export default function Single(props) {
     window.scrollTo(0, 0)
   }, [])
  
- 
 
   return (
     <>
