@@ -12,7 +12,7 @@ export default function DestinationLists(props) {
         dots: false,
         navText: ["<i class='bi bi-arrow-left'></i>", "<i class='bi bi-arrow-right'></i>"],
         autoplay: true, 
-        autoplayTimeout:2100, 
+        autoplayTimeout:2500, 
         responsive: {
             0: {
                 items: 1,
