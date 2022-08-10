@@ -2207,6 +2207,9 @@ b,strong{font-weight:600}
 .destination-list .card .card-title{
     min-height: 68px;
 }
+
+
+.recent-destinations img.card-img-top,
 .recent-destinations .card, 
 .destination-list .img-topwrap::after,
 .destination-list .owl-theme .owl-prev,
@@ -2428,6 +2431,7 @@ b,strong{font-weight:600}
 .recent-destinations .img-hideradius {
     width: 60px;
     min-width: 60px;
+    border-radius: 8px;
 }
 .recent-destinations .card-body.flex-grow-1 {
     padding: 5px 15px;
@@ -2490,6 +2494,14 @@ i.bi.rpost-right {
     text-align: center;
     position: relative;
     top: 4px;
+}
+
+.recent-destinations .card:hover img.card-img-top {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 
