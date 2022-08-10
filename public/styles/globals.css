@@ -287,7 +287,14 @@ a.site__menu__icon{display:none}
 .post__category li a:hover{color:#f4834a}
 .post__category li a:after{content:'';display:block;position:absolute;bottom:1px;left:0;right:0;border-bottom:1px solid #f4834a}
 .post__category li:last-child a{margin-right:0}
-.post__info .post__title{opacity:.9;font-size:20px;color:#2d2d2d;font-weight:600;line-height:1.5;letter-spacing:.4px}
+.post__info .post__title{
+    opacity: .9;
+    font-size: 19px;
+    color: #2d2d2d;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: .4px;
+}
 .title--more a{opacity:.9;font-size:15px;font-weight:500;color:#f4834a;float:right;position:relative;margin-top:10px}
 .title--more a:after{content:'';display:block;position:absolute;left:0;bottom:0;right:0;height:1px;background-color:#f4834a;width:0;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s}
 .title--more a:hover:after{width:100%}
@@ -2100,7 +2107,7 @@ b,strong{font-weight:600}
 .recent-blogsalide li{padding-bottom:15px;margin-bottom:15px;border-bottom:solid 1px #e3e3e3}
 .content-ullist ol,.content-ullist ul{padding-left:23px}
 .content-ullist ol li,.content-ullist ul li{margin-bottom:8px}
-.postreadmore-card{background:#fff;font-weight:500;display:block;font-size:18px;padding:30px;
+.postreadmore-card{background:#fff;font-weight:500;display:block;font-size:18px;padding:25px;
     box-shadow:inset 0 0 0 3px #fff, inset 0 10px 25px 4px rgb(23 25 32 / 2%);
     border-radius:8px;margin-bottom:0;border:solid 1px rgb(66 66 66 / 15%);height:100%}
 .postreadmore-card p{
@@ -2109,6 +2116,8 @@ b,strong{font-weight:600}
     margin-bottom: 10px;
     font-weight: 400;
     letter-spacing: 0.4px;
+    font-size: 16px;
+    margin: 0;
 }
 .recent-blogsalide h3:after,.recent-blogsalide h3:before{left:-14px;margin-top:36px}
 .recent-blogsalide .post__info .post__title{margin-bottom:28px}
@@ -2405,6 +2414,9 @@ b,strong{font-weight:600}
 .title-dlist p{
     font-size: 14px;
 }
+.postreadmore-card p {
+    font-size: 15px;
+}
 .destination-list .owl-theme .owl-prev, .destination-list .owl-theme .owl-next {
     width: 40px;
     height: 40px;
@@ -2439,7 +2451,7 @@ b,strong{font-weight:600}
 .site-header .dropdown .dropdown-toggle{padding-left:15px;padding-right:15px}
 .site-header .dropdown-menu{margin-right:-36px}
 .postreadmore-card{padding:20px;font-size:16px}
-.post__info .post__title{font-size:19px}
+.post__info .post__title{font-size:18px}
  .recent-blogsalide a{font-size:16px}
 .recent-blogsalide p{font-size:14px}
 .breadcrumb_area.full-w.text-uppercase.none .container a,.breadcrumb_area.full-w.text-uppercase.none .container li{font-size:15px}
