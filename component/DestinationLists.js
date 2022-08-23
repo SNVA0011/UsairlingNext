@@ -35,7 +35,6 @@ export default function DestinationLists(props) {
 
 
 
-
     return (
         <>
             {props.data ?
