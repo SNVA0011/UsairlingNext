@@ -328,7 +328,7 @@ a.site__menu__icon{display:block}
 .home-main .site-banner:after{height:40px}
 .home-main .site-banner__content p,.testimonial-item p{font-size:16px}
 .place-slider__nav{display:none}
-.title-border-bottom{font-size:24px}
+.title-border-bottom{font-size: 22px; line-height: 1.4;}
 .blogs,.featured-cities,.testimonial,.trending{padding:60px 0}
 .blogs .post{margin-bottom:30px}
 .testimonial .slick-sliders{padding:0}

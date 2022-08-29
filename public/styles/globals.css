@@ -6,7 +6,7 @@ html{scroll-behavior:smooth}
 .bg-who{background-image:url('/static/images/img_about_1.jpg')}
 .image-w{width:20px}
 .business-main .blogs{background-color:#f9f9f9}
-.bradcum{list-style:none;margin-top:15px;background:rgb(0 0 0 / 20%);border-radius:8px;padding:7px 20px;display:inline-block}
+.bradcum{list-style:none;margin-top:15px;background:rgb(0 0 0 / 20%);border-radius:8px;padding:7px 20px;display:inline-block;text-transform: none;}
 .bradcum li::after{content:'/';margin:0 14px;color:#4e4e4e}
 .bradcum li:last-child::after{display:none}
 .bradcum li{list-style:none;display:inline-block;font-weight:500}
@@ -1523,7 +1523,9 @@ b,strong{font-weight:600}
     -webkit-transition: all .2s cubic-bezier(.5, 0, 0, 1.25);
     transition: all .2s cubic-bezier(.5, 0, 0, 1.25);
     background: #fff;}
-.airplane-iconbx .hover__box__thumb{transform:scale(.8);-webkit-transform:scale(.8);-o-transform:scale(.8);-moz-transform:scale(.8);-ms-transform:scale(.8);overflow:visible;background:rgb(244 131 74 / 10%);border-radius:50%;width:58px;min-width:58px}
+.airplane-iconbx .hover__box__thumb{transform:scale(.8);-webkit-transform:scale(.8);-o-transform:scale(.8);
+    -moz-transform:scale(.8);-ms-transform:scale(.8);overflow:visible;background:rgb(244 131 74 / 10%);
+    border-radius:50%;width:58px;min-width:58px}
 .airplane-iconbx:hover .hover__box__thumb{transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1)}
 .airplane-iconbx:hover{background:rgb(244 131 74 / 5%);box-shadow:none}
 .airplane-iconbx:hover h3.cities__capital{color:#f4834a}
@@ -2113,9 +2115,12 @@ b,strong{font-weight:600}
     border-color: #eeeeee;
     box-shadow: 0 0 10px rgb(0 0 0 / 5%);}
 .airplane-iconbx.sm .hover__box__thumb img{width:46px}
-.airplane-iconbx.sm h3.cities__capital{    font-size: 16px;
-    text-align: right;}
-.airplane-iconbx.sm .hover__box__thumb{min-width: 46px;min-height: 58px;}
+.airplane-iconbx.sm h3.cities__capital{    font-size: 16px;  text-align: right;}
+    .badge.badge-secondary.baggagebadge {
+        font-size: 11px;
+        margin-top: 7px;
+    }
+.airplane-iconbx.sm .hover__box__thumb{min-width: 58px;min-height: 58px;}
 .site-header .dropdown-toggle{background:0 0;color:#343a40;border-color:#ebebeb}
 .site-header .dropdown-toggle.btn-outline-secondary:not(:disabled):not(.disabled).active,.site-header .dropdown-toggle.btn-outline-secondary:not(:disabled):not(.disabled):active,.site-header .show>.dropdown-toggle.btn-outline-secondary.dropdown-toggle{background:#fff;border-color:#7765a5;color:#7765a5;box-shadow:none}
 .site-header .dropdown-menu{left:auto;right:0;transform:none;top:100%;margin-top:9px;width:270px;padding:22px 20px 29px;border:none;box-shadow:0 0 0 3px #fff inset,0 10px 25px 4px rgb(23 25 32 / 2%) inset,0 0 30px rgb(0 0 0 / 20%);border-radius:10px;-webkit-animation-name:fadeInUpmenu;animation-name:fadeInUpmenu;-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-timing-function:cubic-bezier(0.5,0,0,1.25);animation-timing-function:cubic-bezier(0.5,0,0,1.25);-webkit-animation-fill-mode:both;animation-fill-mode:both}
@@ -2508,7 +2513,47 @@ i.bi.rpost-right {
     -webkit-transform: scale(1.3);
 }
 
+.badge.badge-secondary.baggagebadge {
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 9px;
+    background-color: #fef2ed;
+    padding: 4px 8px;
+    color: #f88f65;
+}
  
+.top_airlines_area.baggage {
+    background-color: #fffbf8;
+    background-position: top -257px left,100% 0;
+    background-size: 1400px;
+}
+.baggage .airplane-iconbx {
+    box-shadow: 0 0 10px rgb(0 0 0 / 3%);
+    background-color: #fff;
+    border-color: #fff0e9;
+    border-radius: 12px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease
+}
+.baggage .airplane-iconbx:hover {
+    background: #282523;
+    box-shadow: none;
+}
+.baggage .airplane-iconbx:hover h3.cities__capital {
+    color: #ffffff;
+}
+.baggage .airplane-iconbx:hover .badge.badge-secondary.baggagebadge{
+    background: #bb3c09;
+    color: #fff;
+}
+.badge.badge-secondary.baggagebadge.single { 
+font-size: 14px;
+}
+.top_airlines_area.baggage .title-border-bottom {
+    max-width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*============ responsive ============*/
 @media (min-width:992px){
 .navbar-light .navbar-nav .nav-link.active{box-shadow:0 -3px 1px -1px #7765a5 inset;color:#7765a5;font-weight:600}
@@ -2521,6 +2566,10 @@ i.bi.rpost-right {
     top: 18px;
 }
  
+.badge.badge-secondary.baggagebadge.single { 
+    letter-spacing: 1.6px;
+    padding: 7px 12px;
+}
 }
 
 @media (min-width:576px) and (max-width:991px){
@@ -2535,6 +2584,7 @@ i.bi.rpost-right {
  .page-title--small{
     padding: 90px 0;
 }
+
 }
 @media (max-width:1199px){
 .discover-the-best .Engine-Discover-with{font-size:45px}
@@ -2583,6 +2633,7 @@ i.bi.rpost-right{
 .title-dlist p{
     font-size: 14px;
 }
+ 
 .postreadmore-card p {
     font-size: 15px;
 }
@@ -2610,6 +2661,10 @@ i.bi.rpost-right{
 .owl-row.blogscroll-y {
     max-height: 350px;
     overflow-y: auto;
+}
+.top_airlines_area.baggage { 
+    background-position: top -147px left,100% 0;
+    background-size: 800px;
 }
 }
 @media (max-width:575px){
