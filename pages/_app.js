@@ -1,11 +1,8 @@
 import Head from 'next/head';
-import React, { useEffect } from "react"; 
+import React, { useEffect } from "react";  
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./../public/styles/globals.css"; 
 import { useRouter } from "next/router";
-require('bootstrap/dist/css/bootstrap.min.css')
-require("./../public/styles/globals.css") 
-require("./../public/styles/responsive.css") 
-
-
 
 function MyApp({ Component, pageProps }) {
   const { pathname } = useRouter();

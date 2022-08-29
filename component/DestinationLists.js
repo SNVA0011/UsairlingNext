@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "next/link";
+import Image from "next/image"
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css';
 import 'react-owl-carousel2/src/owl.theme.default.css';
@@ -55,7 +56,8 @@ export default function DestinationLists(props) {
                                                 <a>
                                                     <div className="overflow-hidden img-hideradius position-relative">
                                                         <div className="img-topwrap">
-                                                            <img className="card-img-top" src={items.placeimg} alt={items.place} />
+                                                            <Image className="card-img-top" src={items.placeimg}
+                                                            width={410} height={543} alt={items.place} />
                                                         </div>
                                                         <p className="card-text"><i className="bi bi-geo-alt"></i> {items.place}</p>
                                                     </div>
