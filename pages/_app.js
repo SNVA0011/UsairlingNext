@@ -1,11 +1,14 @@
 import Head from 'next/head';
-import React, { useEffect } from "react";  
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/globals.css"; 
+import React, { useEffect } from "react";   
 import { useRouter } from "next/router";
+import "../styles/globals.css";   
+import "bootstrap/dist/css/bootstrap.min.css";  
+
+
 
 function MyApp({ Component, pageProps }) {
   const { pathname } = useRouter();
+  console.log('pathname-',pathname)
   const lang = pathname.startsWith("/es") ? "es" : "en";
   useEffect(() => {
     document.documentElement.lang = lang;

@@ -7,6 +7,7 @@ import BlogTile from '../component/BlogTile';
 import Link from "next/link"
 import DestinationLists from '../component/DestinationLists'
 
+
 export default function Home(props) {
   return (
     <>
