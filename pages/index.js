@@ -30,8 +30,7 @@ export default function Home(props) {
           {/* DestinationLists */}
           <DestinationLists
             title="Destination Lists"
-            subtitle="Explore the destination"
-
+            subtitle="Explore the destination" 
             data={
               [
                 {
