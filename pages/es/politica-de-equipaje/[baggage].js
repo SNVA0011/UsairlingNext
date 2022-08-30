@@ -81,7 +81,7 @@ export default function BlogDetails({singleblog, recentblog}) {
                       title="Política De Equipaje Reciente"
                       langrecent="es" 
                       baggagelist={
-                        recentblog.slice(0, 6)
+                        recentblog.slice(0, 7)
                       }
                     />
                   </Col>
