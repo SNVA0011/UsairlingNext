@@ -77,6 +77,7 @@ export default function BlogDetails({singleblog, recentblog}) {
              
 
                   <Col xs={12} lg={4} className="mt-5 mt-lg-0">
+                    {console.log('recentblog-',recentblog)}
                     <RecentDestination
                       title="Recent Baggage Policy"
                       langrecent="en" 
@@ -122,7 +123,7 @@ export async function getServerSideProps(context) {
     "heading": "",
     "categoryName": "",
     "siteId": "145",
-    "pageType": "news",
+    "pageType": "baggage-policy",
     "extraTag": "",
     "tfnHeader": "",
     "tfnFooter1": "",

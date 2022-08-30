@@ -122,7 +122,7 @@ export async function getServerSideProps(context) {
     "heading": "",
     "categoryName": "",
     "siteId": "145",
-    "pageType": "politica-de-equipaje",
+    "pageType": "noticias",
     "extraTag": "",
     "tfnHeader": "",
     "tfnFooter1": "",
