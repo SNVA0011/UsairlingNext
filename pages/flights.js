@@ -43,7 +43,7 @@ export default function Flights(props) {
           <Container>
             <Row className='about-uspage privacy__policy full-w pyblock-80 my-5' id="content" >
               <Col md="12" >
-                <h2>Be wise to get best flight deals quickly</h2>
+                <h2>Be wise to get best flight deals quickly  </h2>
                 <p>A flight is required to book in advance when you need to get massive deals and offers to secure your booking to various destinations. If you wish to choose the best flight to book to your required destination, you can search for the best flights with reward points that you can use to get best flight deals at your suitable time. If you are curious to save more and looking for guidance to secure your booking, you need to know the essential trick you can find with the best customer representative team to assist you soo</p>
 
 
@@ -89,21 +89,164 @@ export default function Flights(props) {
               props.allflights.length > 0 ?
 
                 <Row className='alldeals-vi justify-content-center'>
-                  {props.allflights.filter((items) => items.pageType === 'Airline').map((items, i) => (
+                  
                     <Col xs={12} lg={4} sm={6} className="mb-4">
-                      <Link href={`/flights/${items.url}-${items.pageValue}`}>
+                      <Link href="/flights/klm-airlines-kl">
                         <a className="airplane-iconbx sm d-flex align-items-center h-100">
                         <div className="cities__thumb hover__box__thumb">
                         <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
                           
                         </div>
                         <div className="cities__info flex-grow-1">
-                          <h3 className="cities__capital">{items.pageName}-{items.pageValue}</h3>
+                          <h3 className="cities__capital"> KLM Airlines -KL</h3>
                         </div>
                         </a>
                       </Link>
                     </Col>
-                  ))}
+           
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/united-airlines-UA">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> United Airlines -UN</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/american-airlines-aa">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> American Airlines -AA</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/alaska-airlines-as">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> Alaska Airlines -AA</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/allegiant-airlines-G4">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> Allegiant Air -AA</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/copa-airlines-cm">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> Copa Airlines -CA</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/singapore-airlines-SQ">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> Singapore Airlines -SA</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/air-canada-ac">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> Air Canada -AC</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/delta-airlines-dl">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> Delta Airlines -DA</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/air-algerie-ah">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> Air Alderie -AA</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/aeromexico-airlines-am">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital"> Aeromexico airlines -AA</h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
+                    <Col xs={12} lg={4} sm={6} className="mb-4">
+                      <Link href="/flights/frontier-airlines-f9">
+                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                        <div className="cities__thumb hover__box__thumb">
+                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
+                          
+                        </div>
+                        <div className="cities__info flex-grow-1">
+                          <h3 className="cities__capital">Frontier airlines -FA </h3>
+                        </div>
+                        </a>
+                      </Link>
+                    </Col>
                 </Row> 
                 :  <p className='text-center'>No items found !</p>
             }
