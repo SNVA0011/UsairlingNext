@@ -12,19 +12,7 @@ export default function PopularDestinations() {
 					<h2 className="title title-border-bottom align-center offset-item animate">Aerolíneas populares</h2>
 					<div className="cities__contentt">
 						<div className="row">
-							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
-								<Link href='#'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
-									<div className="cities__thumb hover__box__thumb">
-										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
-									</div>
-
-									<div className="cities__info flex-grow-1">
-										<h3 className="cities__capital">Aerolínea KLM</h3>
-									</div>
-								</a>
-								</Link>
-							</div>
+						
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/aerolineas-unidas-ua'>
 									<a className="airplane-iconbx d-flex align-items-center h-100">
@@ -78,60 +66,6 @@ export default function PopularDestinations() {
 								</Link>
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
-								<Link href='#'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
-									<div className="cities__thumb hover__box__thumb">
-										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
-									</div>
-
-									<div className="cities__info flex-grow-1">
-										<h3 className="cities__capital">Copa Airlines</h3>
-									</div>
-								</a>
-								</Link>
-							</div>
-							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
-								<Link href='#'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
-									<div className="cities__thumb hover__box__thumb">
-										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
-									</div>
-
-									<div className="cities__info flex-grow-1">
-										<h3 className="cities__capital">Aerolíneas de Singapur</h3>
-									</div>
-								</a>
-								</Link>
-							</div>
-							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
-								<Link href='#'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
-									<div className="cities__thumb hover__box__thumb">
-										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
-									</div>
-
-									<div className="cities__info flex-grow-1">
-										<h3 className="cities__capital">Aerolíneas de Hong Kong</h3>
-									</div>
-								</a>
-								</Link>
-							</div>
-
-							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
-								<Link href='#'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
-									<div className="cities__thumb hover__box__thumb">
-										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
-									</div>
-
-									<div className="cities__info flex-grow-1">
-										<h3 className="cities__capital">Aire canadá</h3>
-									</div>
-								</a>
-								</Link>
-							</div>
-
-							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/aerolineas-delta-dl'>
 									<a className="airplane-iconbx d-flex align-items-center h-100">
 									<div className="cities__thumb hover__box__thumb">
@@ -139,7 +73,63 @@ export default function PopularDestinations() {
 									</div>
 
 									<div className="cities__info flex-grow-1">
-										<h3 className="cities__capital">Aerolíneas delta</h3>
+										<h3 className="cities__capital">AerolÃ­neas delta</h3>
+									</div>
+								</a>
+								</Link>
+							</div>
+							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
+								<Link href='/es/vuelos/volaris-airlines-Y4'>
+									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<div className="cities__thumb hover__box__thumb">
+										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
+									</div>
+
+									<div className="cities__info flex-grow-1">
+										<h3 className="cities__capital">Volaris Airlines-Y4</h3>
+									</div>
+								</a>
+								</Link>
+							</div>
+							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
+								<Link href='/es/vuelos/avianca-airlines-av'>
+									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<div className="cities__thumb hover__box__thumb">
+										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
+									</div>
+
+									<div className="cities__info flex-grow-1">
+										<h3 className="cities__capital">Avianca Airlines-av </h3>
+									</div>
+								</a>
+								</Link>
+							</div>
+
+							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
+								<Link href='/es/vuelos/Espiritu-Aerolineas-nk'>
+									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<div className="cities__thumb hover__box__thumb">
+										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
+									</div>
+
+									<div className="cities__info flex-grow-1">
+										<h3 className="cities__capital">Espiritu Aerolineas-nk</h3>
+									</div>
+								</a>
+								</Link>
+							</div>
+
+					
+
+							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
+								<Link href='/es/vuelos/latam-aerolineas-la'>
+									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<div className="cities__thumb hover__box__thumb">
+										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
+									</div>
+
+									<div className="cities__info flex-grow-1">
+										<h3 className="cities__capital">Latam Aerolineas-la</h3>
 									</div>
 								</a>
 								</Link>
@@ -154,20 +144,6 @@ export default function PopularDestinations() {
 
 									<div className="cities__info flex-grow-1">
 										<h3 className="cities__capital">Aerolineas westjet-ws</h3>
-									</div>
-								</a>
-								</Link>
-							</div>
-
-							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
-								<Link href='#'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
-									<div className="cities__thumb hover__box__thumb">
-										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
-									</div>
-
-									<div className="cities__info flex-grow-1">
-										<h3 className="cities__capital">Aerolíneas Alitalia</h3>
 									</div>
 								</a>
 								</Link>

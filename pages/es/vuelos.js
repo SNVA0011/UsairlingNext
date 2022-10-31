@@ -159,11 +159,9 @@ export default function Flights(props) {
 
               {props.allflights.length > 0 ? (
                 <Row className="alldeals-vi justify-content-center">
-                  {props.allflights
-                    .filter((items) => items.pageType === 'AirlineE')
-                    .map((items, i) => (
+                 
                       <Col xs={12} lg={4} sm={6} className="mb-4">
-                        <Link href={`/es/vuelos/${items.url}-${items.pageValue}`}>
+                        <Link href="/es/vuelos/aerolineas-unidas-ua">
                           <a className="airplane-iconbx sm d-flex align-items-center h-100">
                             <div className="cities__thumb hover__box__thumb">
                               <Image
@@ -176,13 +174,193 @@ export default function Flights(props) {
                             </div>
                             <div className="cities__info flex-grow-1">
                               <h3 className="cities__capital">
-                                {items.pageName}-{items.pageValue}
+                              AerolÃ­neas Unidas
                               </h3>
                             </div>
                           </a>
                         </Link>
                       </Col>
-                    ))}
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/aerolineas-americanas-aa">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              AerolÃ­neas americanas
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/aerolineas-alaska-AS">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              AerolÃ­neas de Alaska
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/allegiant-airlines-G4">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              AerolÃ­neas Allegiant
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/aerolineas-delta-dl">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              AerolÃ­neas delta
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/volaris-airlines-Y4">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              Volaris Airlines-Y4
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/avianca-airlines-av">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              Avianca Airlines-av
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/Espiritu-Aerolineas-nk">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              Espiritu Aerolineas-nk
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/latam-aerolineas-la">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              Latam Aerolineas-la
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                      {/* <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href="/es/vuelos/aerolineas-westjet-ws">
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image
+                                src="/images/airplane-icon.png"
+                                alt="airlineone"
+                                width={58}
+                                height={58}
+                                layout="responsive"
+                              />
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">
+                              Aerolineas westjet-ws
+                              </h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col> */}
+                 
                 </Row>
               ) : (
                 <p className='text-center'>No se encontraron artículos !</p>

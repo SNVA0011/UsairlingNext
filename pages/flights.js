@@ -28,7 +28,6 @@ export default function Flights(props) {
         MetaWeburl={"https://www.usairling.com"}
       />
 
-
       <Header />
 
       <div className='blogadda'>
@@ -48,7 +47,7 @@ export default function Flights(props) {
           <Container>
             <Row className='about-uspage privacy__policy full-w pyblock-80 my-5' id="content" >
               <Col md="12" >
-                <h2>Be wise to get best flight deals quickly</h2>
+                <h2>Be wise to get best flight deals quickly  </h2>
                 <p>A flight is required to book in advance when you need to get massive deals and offers to secure your booking to various destinations. If you wish to choose the best flight to book to your required destination, you can search for the best flights with reward points that you can use to get best flight deals at your suitable time. If you are curious to save more and looking for guidance to secure your booking, you need to know the essential trick you can find with the best customer representative team to assist you soo</p>
 
 
