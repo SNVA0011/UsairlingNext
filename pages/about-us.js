@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 import Link from "next/link"
 import Header from '../component/Navbar'
 import Footer from "../component/Footer"
-import Head from 'next/head'
 import BreadHero from "../component/BreadHero";
+import MetaHead from "../component/MetaHead";
 
 export default function AboutUs() {
 
@@ -17,12 +17,17 @@ export default function AboutUs() {
 
   return (
     <>
-      <Head>
-        <title>Usairling | About Us | Usairling The Only Way To Go & Fly!</title>
-        <meta name="description" content="Usairling vision has always been to develop and enhance the latest technologies into scalable travel solutions for today's savvy traveler.  " />
-        <meta name="keywords" content="Usairling, cheap flight booking website, best place to book flight, online flight booking" />
-        <link rel="canonical" href={'https://www.usairling.com/about-us'} />
-      </Head>
+
+      <MetaHead 
+      MetaTitle={'Usairling | About Us | Usairling The Only Way To Go & Fly!'}
+      MetaDescription={"Usairling vision has always been to develop and enhance the latest technologies into scalable travel solutions for today's savvy traveler.  "}
+      MetaKeywords={"Usairling, cheap flight booking website, best place to book flight, online flight booking"}
+      MetaCanonical={'https://www.usairling.com/about-us'} 
+      MetaLocate={"en_US"} 
+      MetablogType={false}
+      MetaSitename={"www.usairling.com"}
+      MetaWeburl={"https://www.usairling.com"}
+      />
 
       <Header />
 

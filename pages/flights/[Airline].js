@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import Head from 'next/head';
 import Link from "next/link";
 import Container from 'react-bootstrap/Container';
 import BreadHero from "../../component/BreadHero";
 import Header from '../../component/Navbar'
 import Footer from "../../component/Footer"
 import Pageerror from "../../component/Pageerror"
+import MetaHead from '../../component/MetaHead';
 
 
 export default function Airline(props) {
@@ -13,23 +13,27 @@ export default function Airline(props) {
     window.scrollTo(0, 0)
   }, [])
 
- 
+
   return (
     <>
-   <Header />
+      <Header />
 
       {
         props.singleflight?.length > 0 ?
           <>
 
-            <Head>
-              <title>{props.singleflight[0].metaTitle}</title>
-              <meta name="description" content={props.singleflight[0].metaDesc} />
-              <meta name="keywords" content={props.singleflight[0].metaKeyword} />
-              <link rel="canonical" href={`https://www.usairling.com/flights/${props.singleflight[0].url}-${props.singleflight[0].pageValue}`} />
-            </Head>
+            <MetaHead
+              MetaTitle={props.singleflight[0].metaTitle}
+              MetaDescription={props.singleflight[0].metaDesc}
+              MetaKeywords={props.singleflight[0].metaKeyword}
+              MetaCanonical={`https://www.usairling.com/flights/${props.singleflight[0].url}-${props.singleflight[0].pageValue}`}
+              MetaLocate={"en_US"}
+              MetablogType={false}
+              MetaSitename={"www.usairling.com"}
+              MetaWeburl={"https://www.usairling.com"}
+            />
 
-         
+
             <div className='blogadda'>
 
               <div className="page-title page-title--small page-title--blog align-left" >
@@ -49,22 +53,22 @@ export default function Airline(props) {
               </div>
               <div className='popular-destination blogaddalist details full-w'>
                 <Container>
-                <div className='blogaddalist-round about-uspage privacy__policy full-w pyblock-80 mb-5'>
-                      <div className='blogaddalist-inner'>
-                        <div className="blog-inner-box2">
+                  <div className='blogaddalist-round about-uspage privacy__policy full-w pyblock-80 mb-5'>
+                    <div className='blogaddalist-inner'>
+                      <div className="blog-inner-box2">
                         {props.singleflight[0].contentData.length == 0 ?
                           <p className='pb-2'>No Content found</p>
                           :
                           <div dangerouslySetInnerHTML={{ __html: props.singleflight[0].contentData }}></div>
                         }
-                        </div>
                       </div>
                     </div>
+                  </div>
                 </Container>
               </div>
             </div>
           </>
-          :  <Pageerror />
+          : <Pageerror />
       }
 
 

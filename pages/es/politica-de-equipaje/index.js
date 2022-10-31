@@ -7,6 +7,7 @@ import Head from 'next/head'
 import Header from '../../../component/es/Navbar'
 import Footer from "../../../component/es/Footer"
 import Image from "next/image"
+import MetaHead from '../../../component/MetaHead';
 
 
 export default function politicadeequipaje({baggagepolicy}) {
@@ -16,12 +17,15 @@ export default function politicadeequipaje({baggagepolicy}) {
 
     return (
         <>
-            <Head>
-                <title>Usairling | Política de equipaje, franquicia y tarifas de todas las aerolíneas</title>
-                <meta name="description" content="Encuentre la guía de políticas de equipaje de todas las aerolíneas en usairling. Consulte las tarifas de equipaje, la franquicia, los artículos restringidos y otra información." />
-                <meta name="keywords" content="politica-de-equipaje" />
-                <link rel="canonical" href={'https://www.usairling.com/es/politica-de-equipaje'} />
-            </Head>
+     <MetaHead
+            MetaTitle={'Usairling | Política de equipaje, franquicia y tarifas de todas las aerolíneas'}
+            MetaDescription={"Encuentre la guía de políticas de equipaje de todas las aerolíneas en usairling. Consulte las tarifas de equipaje, la franquicia, los artículos restringidos y otra información."}
+            MetaKeywords={"politica-de-equipaje"}
+            MetaCanonical={'https://www.usairling.com/es/politica-de-equipaje'}
+            MetaLocate={"es_ES"}
+            MetablogType={false}
+            MetaSitename={"www.usairling.com"}
+            MetaWeburl={"https://www.usairling.com"} />
 
             <Header />
 

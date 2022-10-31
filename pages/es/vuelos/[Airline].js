@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import Head from 'next/head';
+
 import Link from "next/link";
 import Container from 'react-bootstrap/Container';
 import BreadHero from "../../../component/es/BreadHero";
 import Header from '../../../component/es/Navbar'
 import Footer from "../../../component/es/Footer"
 import Pageerror from "../../../component/es/Pageerror"
+import MetaHead from '../../../component/MetaHead';
 
 
 export default function Airline(props) {
@@ -21,14 +22,15 @@ export default function Airline(props) {
       {
         props.singleflight?.length > 0 ?
           <>
-
-            <Head>
-              <title>{props.singleflight[0].metaTitle}</title>
-              <meta name="description" content={props.singleflight[0].metaDesc} />
-              <meta name="keywords" content={props.singleflight[0].metaKeyword} />
-              <link rel="canonical" href={`https://www.usairling.com/es/vuelos/${props.singleflight[0].url}-${props.singleflight[0].pageValue}`} />
-            </Head>
-
+         <MetaHead
+            MetaTitle={props.singleflight[0].metaTitle}
+            MetaDescription={props.singleflight[0].metaDesc}
+            MetaKeywords={props.singleflight[0].metaKeyword}
+            MetaCanonical={`https://www.usairling.com/es/vuelos/${props.singleflight[0].url}-${props.singleflight[0].pageValue}`}
+            MetaLocate={"es_ES"}
+            MetablogType={false}
+            MetaSitename={"www.usairling.com"}
+            MetaWeburl={"https://www.usairling.com"} />
 
             <div className='blogadda'>
 

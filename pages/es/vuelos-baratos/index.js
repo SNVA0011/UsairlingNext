@@ -7,6 +7,7 @@ import Head from 'next/head'
 import Header from '../../../component/es/Navbar'
 import Footer from '../../../component/es/Footer'
 import Image from 'next/image'
+import MetaHead from '../../../component/MetaHead'
 
 export default function Flights(props) {
   useEffect(() => {
@@ -15,14 +16,16 @@ export default function Flights(props) {
 
   return (
     <>
-      <Head>
-        <title>
-          Usairling | Lista de vuelos baratos, boletos, ofertas y descuentos
-        </title>
-        <meta name="description" content="Aproveche vuelos baratos y ofertas de tarifas aéreas para todos los boletos de avión. Busque y compare ofertas de última hora y reserve vuelos con USAirling." />
-        <meta name="keywords" content="" />
-        <link rel="canonical" href={'https://www.usairling.com/es/vuelos-baratos'} />
-      </Head>
+
+      <MetaHead
+        MetaTitle={'Usairling | Lista de vuelos baratos, boletos, ofertas y descuentos'}
+        MetaDescription={"Aproveche vuelos baratos y ofertas de tarifas aéreas para todos los boletos de avión. Busque y compare ofertas de última hora y reserve vuelos con USAirling."}
+        MetaKeywords={""}
+        MetaCanonical={'https://www.usairling.com/es/vuelos-baratos'}
+        MetaLocate={"es_ES"}
+        MetablogType={false}
+        MetaSitename={"www.usairling.com"}
+        MetaWeburl={"https://www.usairling.com"} />
 
       <Header />
 

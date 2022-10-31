@@ -3,19 +3,19 @@ import Link from "next/link"
 import Footer from '../../component/Footer';
 import Header from "../../component/Navbar";
 import BreadHero from '../../component/BreadHero';
-import Head from 'next/head'
 import { useRouter } from 'next/router';
 import Pageerror from "../../component/Pageerror"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import RecentDestination from '../../component/RecentDestination';
+import MetaHead from '../../component/MetaHead';
 
-export default function BlogDetails({singleblog, recentblog}) {
+export default function BlogDetails({ singleblog, recentblog }) {
   const location = useRouter();
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, []) 
+  }, [])
   return (
     <>
 
@@ -25,12 +25,18 @@ export default function BlogDetails({singleblog, recentblog}) {
       {singleblog.length === 0 ? <Pageerror /> :
 
         <>
-          <Head>
-            <title>{singleblog[0].title}</title>
-            <meta name="description" content={singleblog[0].description} />
-            <meta name="keywords" content={singleblog[0].keywords} />
-            <link rel="canonical" href={'https://www.usairling.com/baggage-policy/' + singleblog[0].titleUrl} />
-          </Head>
+
+          <MetaHead
+            MetaTitle={singleblog[0].title}
+            MetaDescription={singleblog[0].description}
+            MetaKeywords={singleblog[0].keywords}
+            MetaCanonical={'https://www.usairling.com/baggage-policy/' + singleblog[0].titleUrl}
+            MetaLocate={"en_US"}
+            MetablogType={false}
+            MetaSitename={"www.usairling.com"}
+            MetaWeburl={"https://www.usairling.com"}
+          />
+
 
           <div className='blogadda'>
 
@@ -63,10 +69,10 @@ export default function BlogDetails({singleblog, recentblog}) {
                             singleblog[0].content === '' ?
                               <p className='pb-2'>No Content found</p>
                               :
-                           <>
-                              <span className='badge badge-secondary baggagebadge mb-2 single'>{singleblog[0].categoryName}</span>
-                              <div dangerouslySetInnerHTML={{ __html: singleblog[0].content }}></div>
-                           </>
+                              <>
+                                <span className='badge badge-secondary baggagebadge mb-2 single'>{singleblog[0].categoryName}</span>
+                                <div dangerouslySetInnerHTML={{ __html: singleblog[0].content }}></div>
+                              </>
                           }
                         </div>
 
@@ -74,13 +80,13 @@ export default function BlogDetails({singleblog, recentblog}) {
                     </div>
                   </Col>
 
-             
+
 
                   <Col xs={12} lg={4} className="mt-5 mt-lg-0">
-                    {console.log('recentblog-',recentblog)}
+                    {console.log('recentblog-', recentblog)}
                     <RecentDestination
                       title="Recent Baggage Policy"
-                      langrecent="en" 
+                      langrecent="en"
                       baggagelist={
                         recentblog.slice(0, 7)
                       }
@@ -160,8 +166,8 @@ export async function getServerSideProps(context) {
     "tfnFooter2": "",
     "tfnFooter3": "",
     "tfnPopup": ""
-}
-);
+  }
+  );
 
   var requestOptions = {
     method: 'POST',
@@ -175,7 +181,7 @@ export async function getServerSideProps(context) {
   return {
     props: ({
       singleblog: onejson.response,
-      recentblog: allblogjson.response 
+      recentblog: allblogjson.response
     })
   }
 }

@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import Link from "next/link"
 import Footer from '../component/Footer';
 import Header from "../component/Navbar";
-import Head from 'next/head';
 import BlogTile from '../component/BlogTile';
 import BreadHero from '../component/BreadHero'
+import MetaHead from '../component/MetaHead';
 
 
 export default function Blog(props) {
@@ -14,12 +14,17 @@ export default function Blog(props) {
   }, [])
   return (
     <>
-      <Head>
-        <title>Usairling | Get The Latest Updates on Blogs</title>
-        <meta name="description" content="Get the latest all updates on blogs for flights, car, hotel booking etc." />
-        <meta name="keywords" content="flights booking updates, car booking updates, hotel booking updates" />
-        <link rel="canonical" href={'https://www.usairling.com/blog'} />
-      </Head>
+
+      <MetaHead
+        MetaTitle={'Usairling | Get The Latest Updates on Blogs'}
+        MetaDescription="Get the latest all updates on blogs for flights, car, hotel booking etc."
+        MetaKeywords="flights booking updates, car booking updates, hotel booking updates"
+        MetaCanonical={'https://www.usairling.com/blog'}
+        MetaLocate={"en_US"}
+        MetablogType={true}
+        MetaSitename={"www.usairling.com"}
+        MetaWeburl={"https://www.usairling.com"}
+      />
 
       <Header />
 

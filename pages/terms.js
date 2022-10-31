@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Link from "next/link"
 import Footer from '../component/Footer';
 import Header from "../component/Navbar";
+import MetaHead from '../component/MetaHead';
 
 
 export default function Terms() {
@@ -15,12 +16,17 @@ export default function Terms() {
     }, [])
     return (
         <> 
-            <Head>
-                <title>Usairling | Terms and Conditions</title>
-                <meta name="description" content="Usairling does not act as principal but makes arrangements with third-party vendors, such as, but not limited to airlines, tour operators , suppliers and consolidators." />
-                <meta name="keywords" content="Usairling, cheap flight booking website, best place to book flight, online flight booking" />
-                <link rel="canonical" href={'https://www.usairling.com/terms'} />
-            </Head>
+<MetaHead 
+  MetaTitle={'Usairling | Terms and Conditions'}
+  MetaDescription={"Usairling does not act as principal but makes arrangements with third-party vendors, such as, but not limited to airlines, tour operators , suppliers and consolidators."}
+  MetaKeywords={"Usairling, cheap flight booking website, best place to book flight, online flight booking"}
+  MetaCanonical={'https://www.usairling.com/terms'} 
+  MetaLocate={"en_US"} 
+  MetablogType={false}
+  MetaSitename={"www.usairling.com"}
+  MetaWeburl={"https://www.usairling.com"}
+/>
+ 
 
             <Header /> 
 

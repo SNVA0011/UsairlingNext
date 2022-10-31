@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Link from "next/link"
 import Footer from '../../component/es/Footer';
 import Header from "../../component/es/Navbar";
+import MetaHead from '../../component/MetaHead';
 
 export default function Terms() {
     useEffect(() => {
@@ -14,12 +15,15 @@ export default function Terms() {
     }, [])
     return (
         <>
-            <Head>
-            <title>Usairling | Política de privacidad</title>
-                <meta name="description" content='Usairling.com y sus empresas relacionadas ("nosotros", "nosotros" o "nuestro") valoran su confianza y quieren que esté familiarizado con la forma en que recopilamos, usamos y divulgamos información.' />
-                <meta name="keywords" content="Usairling, cheap flight booking website, best place to book flight, online flight booking" />
-                <link rel="canonical" href={'https://www.usairling.com/es/privacidad'} />
-            </Head>
+            <MetaHead
+                MetaTitle={'Usairling | Política de privacidad'}
+                MetaDescription={'Usairling.com y sus empresas relacionadas ("nosotros", "nosotros" o "nuestro") valoran su confianza y quieren que esté familiarizado con la forma en que recopilamos, usamos y divulgamos información.'}
+                MetaKeywords={"Usairling, cheap flight booking website, best place to book flight, online flight booking"}
+                MetaCanonical={'https://www.usairling.com/es/privacidad'}
+                MetaLocate={"es_ES"}
+                MetablogType={false}
+                MetaSitename={"www.usairling.com"}
+                MetaWeburl={"https://www.usairling.com"} />
 
             <Header />
 

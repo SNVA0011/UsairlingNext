@@ -7,6 +7,7 @@ import Head from 'next/head'
 import Header from '../../component/es/Navbar'
 import Footer from '../../component/es/Footer'
 import Image from 'next/image'
+import MetaHead from '../../component/MetaHead'
 
 export default function Flights(props) {
   useEffect(() => {
@@ -15,21 +16,16 @@ export default function Flights(props) {
 
   return (
     <>
-      <Head>
-        <title>
-          Usairling | Verifique el mejor y más barato vuelo con nosotros en
-          línea
-        </title>
-        <meta
-          name="description"
-          content="Usairling es una fuente confiable de ofertas de vuelos donde puede reservar vuelos para todos los destinos de América del Sur o del mundo con las tarifas aéreas más bajas con nosotros."
-        />
-        <meta
-          name="keywords"
-          content="Usairling, cheap flight booking website, best place to book flight, online flight booking"
-        />
-        <link rel="canonical" href={'https://www.usairling.com/es/vuelos'} />
-      </Head>
+
+      <MetaHead
+        MetaTitle={'Usairling | Verifique el mejor y más barato vuelo con nosotros en línea'}
+        MetaDescription={"Usairling es una fuente confiable de ofertas de vuelos donde puede reservar vuelos para todos los destinos de América del Sur o del mundo con las tarifas aéreas más bajas con nosotros."}
+        MetaKeywords={"Usairling, cheap flight booking website, best place to book flight, online flight booking"}
+        MetaCanonical={'https://www.usairling.com/es/vuelos'}
+        MetaLocate={"es_ES"}
+        MetablogType={false}
+        MetaSitename={"www.usairling.com"}
+        MetaWeburl={"https://www.usairling.com"} />
 
       <Header />
 
@@ -65,7 +61,7 @@ export default function Flights(props) {
 
         <div className="popular-destination blogaddalist full-w m-0 pb-2">
           <Container className=" pb-2">
-            <Row   className="about-uspage privacy__policy full-w pyblock-80 my-5"
+            <Row className="about-uspage privacy__policy full-w pyblock-80 my-5"
               id="content">
               <Col md="12">
                 <h2>
@@ -158,7 +154,7 @@ export default function Flights(props) {
           <Row className="justify-content-center">
             <Col xs={12} md={12}>
               <h2 className="title title-border-bottom align-center offset-item animate">
-                 Aerolíneas Populares 
+                Aerolíneas Populares
               </h2>
 
               {props.allflights.length > 0 ? (

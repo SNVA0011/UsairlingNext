@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import Header from '../../component/es/Navbar'
 import Footer from "../../component/es/Footer"
-import Head from 'next/head';
+
 import BreadHero from "../../component/es/BreadHero";
 import Link from "next/link";
+import MetaHead from "../../component/MetaHead";
 
 export default function ContactUs() {
 	useEffect(() => {
@@ -11,12 +12,16 @@ export default function ContactUs() {
 	}, []);
 	return (
 		<>
-			<Head>
-				<title>Usairling | Contáctenos</title>
-				<meta name="description" content="¡Contacte y visite USAirling para reservar vuelos baratos y confiables ahora!" />
-				<meta name="keywords" content="Usairling, cheap flight booking website, best place to book flight, online flight booking" />
-				<link rel="canonical" href={'https://www.usairling.com/es/contacto'} />
-			</Head>
+			<MetaHead
+				MetaTitle={'Usairling | Contáctenos'}
+				MetaDescription={"¡Contacte y visite USAirling para reservar vuelos baratos y confiables ahora!"}
+				MetaKeywords={"Usairling, cheap flight booking website, best place to book flight, online flight booking"}
+				MetaCanonical={'https://www.usairling.com/es/contacto'}
+				MetaLocate={"es_ES"}
+				MetablogType={false}
+				MetaSitename={"www.usairling.com"}
+				MetaWeburl={"https://www.usairling.com"}
+			/>
 
 			<Header />
 
@@ -55,7 +60,7 @@ export default function ContactUs() {
 									<h2>Nuestras Oficinas</h2>
 									<div className="contact-box">
 										<h3>USA</h3>
-										<p>10-S511 Echo Ln, Willowbrook, Illinois(IL), 60527</p> 
+										<p>10-S511 Echo Ln, Willowbrook, Illinois(IL), 60527</p>
 										<a href="#" title="Get Direction">Get Direction</a>
 									</div>
 									<div className="contact-box">
@@ -72,7 +77,7 @@ export default function ContactUs() {
 									<form action="#" method="POST" className="form-underline">
 										<div className="field-inline">
 											<div className="field-input">
-												<input type="text" name="primer nombre" placeholder="primer nombre"/>
+												<input type="text" name="primer nombre" placeholder="primer nombre" />
 											</div>
 											<div className="field-input">
 												<input type="text" name="Apellido" placeholder="Apellido" />

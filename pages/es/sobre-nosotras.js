@@ -7,6 +7,7 @@ import Header from '../../component/es/Navbar'
 import Footer from "../../component/es/Footer"
 import Head from 'next/head'
 import BreadHero from "../../component/es/BreadHero";
+import MetaHead from "../../component/MetaHead";
 
 export default function AboutUs() {
 
@@ -17,12 +18,15 @@ export default function AboutUs() {
 
   return (
     <>
-      <Head>
-        <title>Usairling | Sobre Nosotros | Usairling ¡La única manera de ir y volar!</title>
-        <meta name="description" content="La visión de Usairling siempre ha sido desarrollar y mejorar las últimas tecnologías en soluciones de viaje escalables para el viajero inteligente de hoy." />
-        <meta name="keywords" content="Usairling, sitio web de reserva de vuelos baratos, el mejor lugar para reservar vuelos, reserva de vuelos en línea" />
-        <link rel="canonical" href={'https://www.usairling.com/es/sobre-nosotras'} />
-      </Head>
+      <MetaHead
+        MetaTitle={'Usairling | Sobre Nosotros | Usairling ¡La única manera de ir y volar!'}
+        MetaDescription={"La visión de Usairling siempre ha sido desarrollar y mejorar las últimas tecnologías en soluciones de viaje escalables para el viajero inteligente de hoy."}
+        MetaKeywords={"Usairling, sitio web de reserva de vuelos baratos, el mejor lugar para reservar vuelos, reserva de vuelos en línea"}
+        MetaCanonical={'https://www.usairling.com/es/sobre-nosotras'}
+        MetaLocate={"es_ES"}
+        MetablogType={false}
+        MetaSitename={"www.usairling.com"}
+        MetaWeburl={"https://www.usairling.com"} />
 
       <Header />
 
@@ -39,7 +43,7 @@ export default function AboutUs() {
       <div className='about-uspage full-w pyblock-80'>
         <Container>
           <Row>
-            <Col xs={12} xl={12} className='about-font-18 mb-5'> 
+            <Col xs={12} xl={12} className='about-font-18 mb-5'>
               <p>Viajar es una actividad que cualquiera puede disfrutar, y es la fuente de alegría para algunas personas que aprecian visitar nuevas áreas. Para que sus vacaciones sean un éxito, la mayoría de la gente se pone en contacto con varias agencias de viajes para que todo se organice correctamente. USAirling se dedica a brindar a los consumidores arreglos de viaje de alta calidad al mejor precio posible. Colaboramos con usted para administrar todos los aspectos de los viajes de manera oportuna, ética y rentable. Nuestros clientes reciben un servicio experto y se aseguran de que el cliente se beneficie de la experiencia y la forma distintiva de atender nuestros servicios que ofrecemos.
 
               </p>                            <br></br>

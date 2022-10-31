@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import RecentDestination from '../../../component/RecentDestination';
+import MetaHead from '../../../component/MetaHead';
 
 export default function BlogDetails({singleblog, recentblog}) {
   const location = useRouter();
@@ -25,13 +26,16 @@ export default function BlogDetails({singleblog, recentblog}) {
       {singleblog.length === 0 ? <Pageerror /> :
 
         <>
-          <Head>
-            <title>{singleblog[0].title}</title>
-            <meta name="description" content={singleblog[0].description} />
-            <meta name="keywords" content={singleblog[0].keywords} />
-            <link rel="canonical" href={'https://www.usairling.com/es/politica-de-equipaje/' + singleblog[0].titleUrl} />
-          </Head>
-
+          <MetaHead
+            MetaTitle={singleblog[0].title}
+            MetaDescription={singleblog[0].description}
+            MetaKeywords={singleblog[0].keywords}
+            MetaCanonical={'https://www.usairling.com/es/politica-de-equipaje/' + singleblog[0].titleUrl}
+            MetaLocate={"es_ES"}
+            MetablogType={false}
+            MetaSitename={"www.usairling.com"}
+            MetaWeburl={"https://www.usairling.com"} />
+ 
           <div className='blogadda'>
 
             <div className="page-title page-title--small page-title--blog align-left" >

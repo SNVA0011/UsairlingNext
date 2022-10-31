@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container'
 import BreadHero from '../../component/BreadHero';
 import { Button, Col, Row } from 'react-bootstrap';
 import Link from "next/link"
-import Head from 'next/head'
 import Header from '../../component/Navbar'
 import Footer from "../../component/Footer"
 import Image from "next/image"
+import MetaHead from '../../component/MetaHead';
 
 
 export default function baggagepolicy({ baggagepolicy }) {
@@ -16,12 +16,17 @@ export default function baggagepolicy({ baggagepolicy }) {
 
     return (
         <>
-            <Head>
-                <title>Usairling | All Airlines Baggage Policy, Allowance & Fees Info</title>
-                <meta name="description" content="Find all airlines baggage policy guide on usairling. Check baggage fees, allowance, restricted items, and other information." />
-                <meta name="keywords" content="baggage-policy" />
-                <link rel="canonical" href={'https://www.usairling.com/baggage-policy'} />
-            </Head>
+
+            <MetaHead
+                MetaTitle={'Usairling | All Airlines Baggage Policy, Allowance & Fees Info'}
+                MetaDescription="Find all airlines baggage policy guide on usairling. Check baggage fees, allowance, restricted items, and other information."
+                MetaKeywords="baggage-policy"
+                MetaCanonical={'https://www.usairling.com/baggage-policy'}
+                MetaLocate={"en_US"}
+                MetablogType={false}
+                MetaSitename={"www.usairling.com"}
+                MetaWeburl={"https://www.usairling.com"}
+            />
 
             <Header />
 
@@ -131,13 +136,13 @@ export default function baggagepolicy({ baggagepolicy }) {
                             <h2 className="title title-border-bottom align-center offset-item animate">Our Baggage Policy Details</h2>
                         </Col>
                     </Row>
- 
+
                     {baggagepolicy.length > 0 ? (
                         <Row className='alldeals-vi justify-content-center'>
                             {baggagepolicy.map((items, i) => (
                                 <Col xs={12} md={6} lg={4} className="mb-3 px-2" key={i}>
                                     <Link href={`/baggage-policy/${items.titleUrl}`}>
-                                        <a className="airplane-iconbx d-flex align-items-center h-100"> 
+                                        <a className="airplane-iconbx d-flex align-items-center h-100">
                                             <div className="cities__thumb hover__box__thumb">
                                                 <Image
                                                     src="/images/airplane-icon.png"
@@ -150,7 +155,7 @@ export default function baggagepolicy({ baggagepolicy }) {
                                             <div className="cities__info flex-grow-1 text-left pl-3">
                                                 <h3 className="cities__capital text-left p-0">
                                                     {items.heading}
-                                                </h3> 
+                                                </h3>
                                                 <span className='badge badge-secondary baggagebadge'>{items.categoryName}</span>
                                             </div>
                                         </a>

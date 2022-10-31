@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import RecentDestination from '../../../component/RecentDestination';
+import MetaHead from '../../../component/MetaHead';
 
 export default function BlogDetails(props, router) {
   const location = useRouter();
@@ -23,12 +24,16 @@ export default function BlogDetails(props, router) {
 
       {props.singleblog.length === 0 ? <Pageerror /> :
         <>
-          <Head>
-            <title>{props.singleblog[0].title}</title>
-            <meta name="description" content={props.singleblog[0].description} />
-            <meta name="keywords" content={props.singleblog[0].keywords} />
-            <link rel="canonical" href={'https://www.usairling.com/es/articulos/' + props.singleblog[0].titleUrl} />
-          </Head>
+
+          <MetaHead
+            MetaTitle={props.singleblog[0].title}
+            MetaDescription={props.singleblog[0].description}
+            MetaKeywords={props.singleblog[0].keywords}
+            MetaCanonical={'https://www.usairling.com/es/articulos/' + props.singleblog[0].titleUrl}
+            MetaLocate={"es_ES"}
+            MetablogType={true}
+            MetaSitename={"www.usairling.com"}
+            MetaWeburl={"https://www.usairling.com"} />
 
 
           <div className='blogadda'>
@@ -105,7 +110,7 @@ export async function getServerSideProps(context) {
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
-    // All Blog
+  // All Blog
   var blograw = JSON.stringify({
     "id": "",
     "title": "",

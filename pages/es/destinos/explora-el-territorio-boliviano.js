@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Head from 'next/head';
+
 import Link from "next/link";
 import BreadHero from "../../../component/es/BreadHero";
 import Header from '../../../component/es/Navbar';
@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import RecentDestination from '../../../component/RecentDestination';
+import MetaHead from '../../../component/MetaHead';
 
 export default function BolivianTerritor(props) {
   useEffect(() => {
@@ -19,12 +20,17 @@ export default function BolivianTerritor(props) {
     <>
       <Header />
 
-      <Head>
-        <title>Usairling | Explora el territorio boliviano</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <link rel="canonical" href="https://www.usairling.com/es/destinos/explora-el-territorio-boliviano" />
-      </Head>
+    	<MetaHead
+				MetaTitle={'Usairling | Explora el territorio boliviano'}
+				MetaDescription={""}
+				MetaKeywords={""}
+				MetaCanonical={"https://www.usairling.com/es/destinos/explora-el-territorio-boliviano"}
+				MetaLocate={"es_ES"}
+				MetablogType={false}
+				MetaSitename={"www.usairling.com"}
+				MetaWeburl={"https://www.usairling.com"}
+			/>
+   
 
       <div className="page-title page-title--small align-left">
         <div className="container">

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Head from 'next/head';
+
 import Link from "next/link";
 import BreadHero from "../../../component/es/BreadHero";
 import Header from '../../../component/es/Navbar';
@@ -8,6 +8,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import RecentDestination from '../../../component/RecentDestination';
+import MetaHead from "../../component/MetaHead";
+
 
 export default function SumptuousDeals(props) {
   useEffect(() => {
@@ -19,12 +21,17 @@ export default function SumptuousDeals(props) {
     <>
       <Header />
 
-      <Head>
-        <title>Usairling | Ofertas suntuosas a Aruba</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <link rel="canonical" href="https://www.usairling.com/es/destinos/suntuosas-ofertas-a-aruba" />
-      </Head>
+      			<MetaHead
+				MetaTitle={'Usairling | Ofertas suntuosas a Aruba'}
+				MetaDescription={""}
+				MetaKeywords={""}
+				MetaCanonical={"https://www.usairling.com/es/destinos/suntuosas-ofertas-a-aruba"}
+				MetaLocate={"es_ES"}
+				MetablogType={false}
+				MetaSitename={"www.usairling.com"}
+				MetaWeburl={"https://www.usairling.com"}
+			/>
+ 
 
       <div className="page-title page-title--small align-left">
         <div className="container">

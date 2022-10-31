@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container'
 import BreadHero from '../component/BreadHero';
 import { Button, Col, Row } from 'react-bootstrap';
 import Link from "next/link"
-import Head from 'next/head'
 import Header from '../component/Navbar'
 import Footer from "../component/Footer"
 import Image from "next/image"
+import MetaHead from '../component/MetaHead';
 
 
 export default function Flights(props) {
@@ -15,13 +15,18 @@ export default function Flights(props) {
   }, [])
 
   return (
-    <> 
-      <Head>
-        <title>Usairling | Check Best and Cheap Flight With us Online</title>
-        <meta name="description" content="Usairling is a reliable source for flight deals where your can book flights for all destinations across South America or world at the lowest airfares with us. " />
-        <meta name="keywords" content="Usairling, cheap flight booking website, best place to book flight, online flight booking" />
-        <link rel="canonical" href={'https://www.usairling.com/flights'} />
-      </Head>
+    <>
+
+      <MetaHead
+        MetaTitle={'Usairling | Check Best and Cheap Flight With us Online'}
+        MetaDescription={"Usairling is a reliable source for flight deals where your can book flights for all destinations across South America or world at the lowest airfares with us. "}
+        MetaKeywords={"Usairling, cheap flight booking website, best place to book flight, online flight booking"}
+        MetaCanonical={'https://www.usairling.com/flights'}
+        MetaLocate={"en_US"}
+        MetablogType={false}
+        MetaSitename={"www.usairling.com"}
+        MetaWeburl={"https://www.usairling.com"}
+      />
 
 
       <Header />
@@ -82,33 +87,33 @@ export default function Flights(props) {
           <Row className='justify-content-center'>
             <Col xs={12} md={12}>
               <h2 className="title title-border-bottom align-center offset-item animate">Popular Airlines</h2>
-      
-      
-      
-              {
-              props.allflights.length > 0 ?
 
-                <Row className='alldeals-vi justify-content-center'>
-                  {props.allflights.filter((items) => items.pageType === 'Airline').map((items, i) => (
-                    <Col xs={12} lg={4} sm={6} className="mb-4">
-                      <Link href={`/flights/${items.url}-${items.pageValue}`}>
-                        <a className="airplane-iconbx sm d-flex align-items-center h-100">
-                        <div className="cities__thumb hover__box__thumb">
-                        <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive'/>
-                          
-                        </div>
-                        <div className="cities__info flex-grow-1">
-                          <h3 className="cities__capital">{items.pageName}-{items.pageValue}</h3>
-                        </div>
-                        </a>
-                      </Link>
-                    </Col>
-                  ))}
-                </Row> 
-                :  <p className='text-center'>No items found !</p>
-            }
+
+
+              {
+                props.allflights.length > 0 ?
+
+                  <Row className='alldeals-vi justify-content-center'>
+                    {props.allflights.filter((items) => items.pageType === 'Airline').map((items, i) => (
+                      <Col xs={12} lg={4} sm={6} className="mb-4">
+                        <Link href={`/flights/${items.url}-${items.pageValue}`}>
+                          <a className="airplane-iconbx sm d-flex align-items-center h-100">
+                            <div className="cities__thumb hover__box__thumb">
+                              <Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
+
+                            </div>
+                            <div className="cities__info flex-grow-1">
+                              <h3 className="cities__capital">{items.pageName}-{items.pageValue}</h3>
+                            </div>
+                          </a>
+                        </Link>
+                      </Col>
+                    ))}
+                  </Row>
+                  : <p className='text-center'>No items found !</p>
+              }
             </Col>
- 
+
 
           </Row>
         </Container>

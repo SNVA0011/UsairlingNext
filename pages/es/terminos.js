@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Link from "next/link"
 import Footer from '../../component/es/Footer';
 import Header from "../../component/es/Navbar";
+import MetaHead from '../../component/MetaHead';
 
 
 export default function Terms() {
@@ -14,17 +15,20 @@ export default function Terms() {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <> 
-            <Head>
-            <title>Usairling | Términos y condiciones</title>
-                <meta name="description" content="Usairling no actúa como mandante, pero hace arreglos con proveedores externos, como, entre otros, aerolíneas, operadores turísticos, proveedores y consolidadores." />
-                <meta name="keywords" content="Usairling, cheap flight booking website, best place to book flight, online flight booking" />
-                <link rel="canonical" href={'https://www.usairling.com/es/terminos'} />
-            </Head>
+        <>
+            <MetaHead
+                MetaTitle={'Usairling | Términos y condiciones'}
+                MetaDescription={"Usairling no actúa como mandante, pero hace arreglos con proveedores externos, como, entre otros, aerolíneas, operadores turísticos, proveedores y consolidadores."}
+                MetaKeywords={"Usairling, cheap flight booking website, best place to book flight, online flight booking"}
+                MetaCanonical={'https://www.usairling.com/es/terminos'}
+                MetaLocate={"es_ES"}
+                MetablogType={false}
+                MetaSitename={"www.usairling.com"}
+                MetaWeburl={"https://www.usairling.com"} />
 
-            <Header /> 
+            <Header />
 
-         
+
             <div className="page-title page-title--small align-left" >
                 <div className="container">
                     <div className="page-title__content">

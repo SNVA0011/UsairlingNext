@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import Header from '../component/Navbar'
 import Footer from "../component/Footer"
-import Head from 'next/head';
+
 import BreadHero from "../component/BreadHero";
 import Link from "next/link";
+import MetaHead from "../component/MetaHead";
 
 export default function ContactUs() {
 	useEffect(() => {
@@ -11,13 +12,18 @@ export default function ContactUs() {
 	}, []);
 	return (
 		<>
-			<Head>
-				<title>Usairling | Contact Us</title>
-				<meta name="description" content="Contact & Visit USAirling for the cheap and reliable flights booking now! " />
-				<meta name="keywords" content="Usairling, cheap flight booking website, best place to book flight, online flight booking" />
-				<link rel="canonical" href={'https://www.usairling.com/contact'} />
-			</Head>
+<MetaHead 
+  MetaTitle={'Usairling | Contact Us'}
+  MetaDescription={"Contact & Visit USAirling for the cheap and reliable flights booking now! "}
+  MetaKeywords={"Usairling, cheap flight booking website, best place to book flight, online flight booking"}
+  MetaCanonical={'https://www.usairling.com/contact'} 
+  MetaLocate={"en_US"} 
+  MetablogType={false}
+  MetaSitename={"www.usairling.com"}
+  MetaWeburl={"https://www.usairling.com"}
+/>
 
+  
 			<Header />
 
 			<div className="page-title page-title--small align-left">
