@@ -28,7 +28,7 @@ export default function Blog(props) {
 
       <Header />
 
-      <div className='blogadda'>
+      <div className='blogadda nm'>
 
         <div className="page-title page-title--small page-title--blog align-left" >
           <div className="container">
