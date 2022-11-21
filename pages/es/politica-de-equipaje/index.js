@@ -10,22 +10,22 @@ import Image from "next/image"
 import MetaHead from '../../../component/MetaHead';
 
 
-export default function politicadeequipaje({baggagepolicy}) {
+export default function politicadeequipaje({ baggagepolicy }) {
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, []) 
+    }, [])
 
     return (
         <>
-     <MetaHead
-            MetaTitle={'Usairling | Política de equipaje, franquicia y tarifas de todas las aerolíneas'}
-            MetaDescription={"Encuentre la guía de políticas de equipaje de todas las aerolíneas en usairling. Consulte las tarifas de equipaje, la franquicia, los artículos restringidos y otra información."}
-            MetaKeywords={"politica-de-equipaje"}
-            MetaCanonical={'https://www.usairling.com/es/politica-de-equipaje'}
-            MetaLocate={"es_ES"}
-            MetablogType={false}
-            MetaSitename={"www.usairling.com"}
-            MetaWeburl={"https://www.usairling.com"} />
+            <MetaHead
+                MetaTitle={'Usairling | Política de equipaje, franquicia y tarifas de todas las aerolíneas'}
+                MetaDescription={"Encuentre la guía de políticas de equipaje de todas las aerolíneas en usairling. Consulte las tarifas de equipaje, la franquicia, los artículos restringidos y otra información."}
+                MetaKeywords={"politica-de-equipaje"}
+                MetaCanonical={'https://www.usairling.com/es/politica-de-equipaje'}
+                MetaLocate={"es_ES"}
+                MetablogType={false}
+                MetaSitename={"www.usairling.com"}
+                MetaWeburl={"https://www.usairling.com"} />
 
             <Header />
 
@@ -37,8 +37,8 @@ export default function politicadeequipaje({baggagepolicy}) {
                             <h1 className="page-title__name">Politica de equipaje</h1>
                         </div>
                     </div>
-                    <BreadHero linkhtml={<><ul className='bradcum'> 
-                        <li><Link href="/es/">Casa</Link></li> 
+                    <BreadHero linkhtml={<><ul className='bradcum'>
+                        <li><Link href="/es/">Casa</Link></li>
                         <li className='breadcrumb-item active' aria-current="page">Politica de equipaje</li></ul></>} />
                 </div>
 
@@ -47,74 +47,74 @@ export default function politicadeequipaje({baggagepolicy}) {
                     <Container>
                         <Row className='about-uspage privacy__policy full-w pyblock-80 my-5' id="content" >
                             <Col md="12" >
-                            <h2 className='mb-3'>¿Cuál es exactamente la política de equipaje de las aerolíneas?</h2>
-                                 <p>Si tiene curiosidad acerca de las políticas de equipaje o las reglas de equipaje de la aerolínea, siga leyendo para obtener más información. La política de equipaje es un conjunto de pautas básicas que especifica los tipos, el peso y las dimensiones de las maletas que un pasajero puede llevar en un vuelo.</p>
-                                 <p>Muchos consumidores que compran vuelos tienen confusión sobre el equipaje o desconocen las normas de equipaje. Puede causar un problema en el aeropuerto o durante el procedimiento de check-in. Puede leer más sobre la política de equipaje aquí para comprender cómo evitar que esto suceda.</p>
+                                <h2 className='mb-3'>¿Cuál es exactamente la política de equipaje de las aerolíneas?</h2>
+                                <p>Si tiene curiosidad acerca de las políticas de equipaje o las reglas de equipaje de la aerolínea, siga leyendo para obtener más información. La política de equipaje es un conjunto de pautas básicas que especifica los tipos, el peso y las dimensiones de las maletas que un pasajero puede llevar en un vuelo.</p>
+                                <p>Muchos consumidores que compran vuelos tienen confusión sobre el equipaje o desconocen las normas de equipaje. Puede causar un problema en el aeropuerto o durante el procedimiento de check-in. Puede leer más sobre la política de equipaje aquí para comprender cómo evitar que esto suceda.</p>
 
-                                <Row className='mt-3'> 
+                                <Row className='mt-3'>
                                     <Col lg="4" xs="12" className=' mb-3'>
                                         <div className='border p-3 h-100 rounded-xl'>
-                                        <p className='mb-2'><b className='text-dark'>Equipaje facturado:</b></p>
-                                         <p>El único equipaje que los viajeros pueden llevar a bordo es el que se ha facturado. Existen ciertas restricciones sobre el equipaje facturado en cuanto a su tamaño y peso. Cargamos este equipaje en el área de carga.</p>
+                                            <p className='mb-2'><b className='text-dark'>Equipaje facturado:</b></p>
+                                            <p>El único equipaje que los viajeros pueden llevar a bordo es el que se ha facturado. Existen ciertas restricciones sobre el equipaje facturado en cuanto a su tamaño y peso. Cargamos este equipaje en el área de carga.</p>
                                         </div>
                                     </Col>
 
                                     <Col lg="4" xs="12" className=' mb-3'>
                                         <div className='border p-3 h-100 rounded-xl'>
-                                        <p className='mb-2'><b className='text-dark'>Bolsas de mano;</b></p>
-                                         <p>Las bolsas de mano están permitidas en la sección de pasajeros para pasajeros. Generalmente se le conoce como equipaje de mano. Puede guardarse debajo del asiento o en el compartimento superior.</p>
+                                            <p className='mb-2'><b className='text-dark'>Bolsas de mano;</b></p>
+                                            <p>Las bolsas de mano están permitidas en la sección de pasajeros para pasajeros. Generalmente se le conoce como equipaje de mano. Puede guardarse debajo del asiento o en el compartimento superior.</p>
                                         </div>
                                     </Col>
 
                                     <Col lg="4" xs="12" className=' mb-3'>
                                         <div className='border p-3 h-100 rounded-xl'>
-                                        <p className='mb-2'><b className='text-dark'>¿Tipos de Equipaje?</b></p>
-                                         <p>En cuanto a las compañías aéreas, el equipaje se divide en dos grupos, que son los siguientes:</p>
+                                            <p className='mb-2'><b className='text-dark'>¿Tipos de Equipaje?</b></p>
+                                            <p>En cuanto a las compañías aéreas, el equipaje se divide en dos grupos, que son los siguientes:</p>
                                         </div>
                                     </Col>
                                 </Row>
- 
+
                                 <h2 className='mt-5 mb-3'>¿Cuánto equipaje puedo llevar en la Aerolínea?</h2>
-                                 <p>Al viajar, el elemento más importante es el equipaje. Con frecuencia se considera un aspecto crucial de los viajes. Hay algunas pautas que uno debe cumplir con respecto a la franquicia de equipaje de la aerolínea, y son las siguientes: <br /></p>
+                                <p>Al viajar, el elemento más importante es el equipaje. Con frecuencia se considera un aspecto crucial de los viajes. Hay algunas pautas que uno debe cumplir con respecto a la franquicia de equipaje de la aerolínea, y son las siguientes: <br /></p>
                                 <ul>
-                                <li>La mayoría de las aerolíneas permiten que los viajeros facturen una maleta y traigan un equipaje de mano.</li>
-                                     <li>El límite de peso estándar para el equipaje facturado es de 50 libras, que es un umbral muy bajo. Si los viajeros tienen la intención de ir en avión, pueden llevar esto.</li>
-                                     <li>El estándar establecido por las aerolíneas es de alrededor de 62 pulgadas lineales en lo que respecta a las restricciones de tamaño. Esta es la bolsa más grande que se puede llevar a bordo, y los viajeros que no deseen pagar más para llevar su equipaje en el viaje deben cumplir con esta regla.</li>
-                                     <li>Estas son, con mucho, las estadísticas y las fuentes que se utilizan con más frecuencia cuando se analizan las regulaciones de equipaje y de las aerolíneas.</li>
+                                    <li>La mayoría de las aerolíneas permiten que los viajeros facturen una maleta y traigan un equipaje de mano.</li>
+                                    <li>El límite de peso estándar para el equipaje facturado es de 50 libras, que es un umbral muy bajo. Si los viajeros tienen la intención de ir en avión, pueden llevar esto.</li>
+                                    <li>El estándar establecido por las aerolíneas es de alrededor de 62 pulgadas lineales en lo que respecta a las restricciones de tamaño. Esta es la bolsa más grande que se puede llevar a bordo, y los viajeros que no deseen pagar más para llevar su equipaje en el viaje deben cumplir con esta regla.</li>
+                                    <li>Estas son, con mucho, las estadísticas y las fuentes que se utilizan con más frecuencia cuando se analizan las regulaciones de equipaje y de las aerolíneas.</li>
                                 </ul>
 
 
                                 <h2 className='mt-5 mb-3'>¿Qué artículos están permitidos y no permitidos en los vuelos?</h2>
-                                 <p>Tenemos excelentes consejos para usted si se pregunta qué productos debe y no debe llevar en un vuelo. Este contendrá información sobre qué llevar y qué dejar en casa mientras viaja en avión.</p>
+                                <p>Tenemos excelentes consejos para usted si se pregunta qué productos debe y no debe llevar en un vuelo. Este contendrá información sobre qué llevar y qué dejar en casa mientras viaja en avión.</p>
 
                                 <div className='row mt-4 mb-3'>
                                     <div className='col-lg-6 col-12 mb-3'>
                                         <p className='mb-0'><b className='text-dark'>Permitido que se puede llevar?</b></p>
                                         <ul>
-                                             <li>Líquidos de menos de 100 ml.</li>
-                                             <li>Medicamentos</li>
-                                             <li>Aerosoles</li>
-                                             <li>Plantas</li>
-                                             <li>Comida</li>
-                                             <li>Alcohol</li>
-                                             <li>Ropa</li>
-                                             <li>Equipamiento deportivo e instrumentos musicales.</li>
+                                            <li>Líquidos de menos de 100 ml.</li>
+                                            <li>Medicamentos</li>
+                                            <li>Aerosoles</li>
+                                            <li>Plantas</li>
+                                            <li>Comida</li>
+                                            <li>Alcohol</li>
+                                            <li>Ropa</li>
+                                            <li>Equipamiento deportivo e instrumentos musicales.</li>
                                         </ul>
                                     </div>
 
                                     <div className='col-lg-6 col-12'>
                                         <p className='mb-0'><b className='text-dark'>No permitido:</b></p>
                                         <ul>
-                                        <li>Gases comprimidos</li>
-                                             <li>Fuegos artificiales</li>
-                                             <li>Armas de juguete</li>
-                                             <li>Cualquier objeto afilado</li>
-                                             <li>Samsung Galaxy Nota 7</li>
-                                             <li>Explosivos</li>
-                                             <li>Corrosivos</li>
-                                             <li>Líquidos inflamables</li>
-                                             <li>Materiales oxidantes</li>
-                                             <li>Veneno</li>
+                                            <li>Gases comprimidos</li>
+                                            <li>Fuegos artificiales</li>
+                                            <li>Armas de juguete</li>
+                                            <li>Cualquier objeto afilado</li>
+                                            <li>Samsung Galaxy Nota 7</li>
+                                            <li>Explosivos</li>
+                                            <li>Corrosivos</li>
+                                            <li>Líquidos inflamables</li>
+                                            <li>Materiales oxidantes</li>
+                                            <li>Veneno</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -137,13 +137,13 @@ export default function politicadeequipaje({baggagepolicy}) {
                             <h2 className="title title-border-bottom align-center offset-item animate">Detalles De Nuestra Política De Equipaje</h2>
                         </Col>
                     </Row>
- 
+
                     {baggagepolicy.length > 0 ? (
                         <Row className='alldeals-vi justify-content-center'>
                             {baggagepolicy.map((items, i) => (
                                 <Col xs={12} md={6} lg={4} className="mb-3 px-2" key={i}>
                                     <Link href={`/es/politica-de-equipaje/${items.titleUrl}`}>
-                                        <a className="airplane-iconbx d-flex align-items-start h-100"> 
+                                        <a className="airplane-iconbx d-flex align-items-start h-100">
                                             <div className="cities__thumb hover__box__thumb">
                                                 <Image
                                                     src="/images/airplane-icon.png"
@@ -156,7 +156,7 @@ export default function politicadeequipaje({baggagepolicy}) {
                                             <div className="cities__info flex-grow-1 text-left pl-3">
                                                 <h3 className="cities__capital text-left p-0">
                                                     {items.heading}
-                                                </h3> 
+                                                </h3>
                                                 <span className='badge badge-secondary baggagebadge'>{items.categoryName}</span>
                                             </div>
                                         </a>
@@ -218,5 +218,9 @@ export async function getStaticProps() {
     const json = await res.json()
     return {
         props: { baggagepolicy: json.response },
+        // Next.js will attempt to re-generate the page:
+        // - When a request comes in
+        // - At most once every 10 seconds
+        revalidate: 60, // In seconds
     }
 }
