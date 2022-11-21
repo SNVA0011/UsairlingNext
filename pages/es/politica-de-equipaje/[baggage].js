@@ -12,11 +12,26 @@ import Col from 'react-bootstrap/Col';
 import RecentDestination from '../../../component/RecentDestination';
 import MetaHead from '../../../component/MetaHead';
 
-export default function BlogDetails({singleblog, recentblog}) {
+export default function BlogDetails({ singleblog, recentblog }) {
   const location = useRouter();
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, []) 
+  }, [])
+
+  if (location.isFallback) {
+    return <>
+      <Header />
+
+      <div className='text-center full-w my-5 py-5'>
+        <div class="spinner-border text-secondary mr-2" role="status">
+        </div>  Loading...
+      </div>
+
+      <Footer />
+    </>
+  }
+
+
   return (
     <>
 
@@ -35,7 +50,7 @@ export default function BlogDetails({singleblog, recentblog}) {
             MetablogType={false}
             MetaSitename={"www.usairling.com"}
             MetaWeburl={"https://www.usairling.com"} />
- 
+
           <div className='blogadda'>
 
             <div className="page-title page-title--small page-title--blog align-left" >
@@ -45,8 +60,8 @@ export default function BlogDetails({singleblog, recentblog}) {
                     {singleblog[0].heading}
                   </h1>
 
-                  <BreadHero linkhtml={<><ul className='bradcum'> 
-                  <li><Link href="/es/">Casa</Link></li> 
+                  <BreadHero linkhtml={<><ul className='bradcum'>
+                    <li><Link href="/es/">Casa</Link></li>
                     <li> <Link href="/es/politica-de-equipaje">Politica de equipaje</Link></li>
                     <li className='breadcrumb-item active' aria-current="page">
                       {singleblog[0].heading}</li> </ul></>} />
@@ -67,10 +82,10 @@ export default function BlogDetails({singleblog, recentblog}) {
                             singleblog[0].content === '' ?
                               <p className='pb-2'>No Content found</p>
                               :
-                           <>
-                              <span className='badge badge-secondary baggagebadge mb-2 single'>{singleblog[0].categoryName}</span>
-                              <div dangerouslySetInnerHTML={{ __html: singleblog[0].content }}></div>
-                           </>
+                              <>
+                                <span className='badge badge-secondary baggagebadge mb-2 single'>{singleblog[0].categoryName}</span>
+                                <div dangerouslySetInnerHTML={{ __html: singleblog[0].content }}></div>
+                              </>
                           }
                         </div>
 
@@ -78,12 +93,12 @@ export default function BlogDetails({singleblog, recentblog}) {
                     </div>
                   </Col>
 
-             
+
 
                   <Col xs={12} lg={4} className="mt-5 mt-lg-0">
                     <RecentDestination
                       title="Política De Equipaje Reciente"
-                      langrecent="es" 
+                      langrecent="es"
                       baggagelist={
                         recentblog.slice(0, 7)
                       }
@@ -108,7 +123,7 @@ export default function BlogDetails({singleblog, recentblog}) {
 
 
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { params } = context
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
@@ -163,8 +178,8 @@ export async function getServerSideProps(context) {
     "tfnFooter2": "",
     "tfnFooter3": "",
     "tfnPopup": ""
-}
-);
+  }
+  );
 
   var requestOptions = {
     method: 'POST',
@@ -178,7 +193,72 @@ export async function getServerSideProps(context) {
   return {
     props: ({
       singleblog: onejson.response,
-      recentblog: allblogjson.response 
+      recentblog: allblogjson.response
+    }),
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 60, // In seconds
+  }
+}
+
+
+
+
+
+
+// paths -> slugs which are allowed
+export const getStaticPaths = async () => {
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+
+  var raw = JSON.stringify(
+    {
+      "id": "",
+      "title": "",
+      "titleUrl": "",
+      "content": "",
+      "description": "",
+      "keywords": "",
+      "posttime": "",
+      "status": "",
+      "heading": "",
+      "categoryName": "",
+      "siteId": "145",
+      "pageType": "politica-de-equipaje",
+      "extraTag": "",
+      "tfnHeader": "",
+      "tfnFooter1": "",
+      "tfnFooter2": "",
+      "tfnFooter3": "",
+      "tfnPopup": ""
     })
+
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow',
+  }
+
+  const res = await fetch(
+    'http://cms.travomint.com/news-article/showNAdata?authcode=Trav3103s987876',
+    requestOptions,
+  )
+  const json = await res.json()
+  const data = json.response;
+
+  // fallback ->
+  let paths = [];
+
+  data.forEach((post) => {
+    paths.push({
+      params: { baggage: post.titleUrl }
+    })
+  })
+
+  return {
+    paths,
+    fallback: true
   }
 }

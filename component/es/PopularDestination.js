@@ -15,7 +15,7 @@ export default function PopularDestinations() {
 						
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/aerolineas-unidas-ua'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -28,7 +28,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/aerolineas-americanas-aa'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -41,7 +41,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/aerolineas-alaska-AS'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -54,7 +54,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/allegiant-airlines-G4'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -67,7 +67,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/aerolineas-delta-dl'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -80,7 +80,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/volaris-airlines-Y4'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -93,7 +93,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/avianca-airlines-av'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -107,7 +107,7 @@ export default function PopularDestinations() {
 
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/Espiritu-Aerolineas-nk'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -123,7 +123,7 @@ export default function PopularDestinations() {
 
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/latam-aerolineas-la'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>
@@ -137,7 +137,7 @@ export default function PopularDestinations() {
 
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href='/es/vuelos/aerolineas-westjet-ws'>
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 									<div className="cities__thumb hover__box__thumb">
 										<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 									</div>

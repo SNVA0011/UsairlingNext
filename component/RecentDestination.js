@@ -6,6 +6,9 @@ import { useRouter } from 'next/router';
 
 export default function RecentDestination(props) {
     const location = useRouter();
+
+    const monthlist = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
+
  
     return (
         <>
@@ -57,6 +60,10 @@ export default function RecentDestination(props) {
                                             <i className="bi bi-chevron-double-right rpost-right"></i>
                                         </div>
                                         <div className="card-body flex-grow-1 pr-0 rpost-heading">
+                                        <div className="text-left text-secondary mb-1  text-sm">
+                              <i className="bi bi-calendar4 mr-2"></i>{" "}
+                              { (monthlist[new Date(items.posttime).getMonth()])  + " " + (new Date(items.posttime)).getDate() + ", " + (new Date(items.posttime)).getFullYear()}
+                            </div>
                                             <h5 className="card-title mb-0">{items.heading}</h5>
                                         </div>
                                     </a>

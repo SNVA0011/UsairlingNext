@@ -130,7 +130,7 @@ export default function Flights(props) {
 
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
@@ -165,6 +165,8 @@ export async function getServerSideProps() {
 
   const res = await fetch("https://cms.travomint.com/travoles-content/site-map?authcode=Trav3103s987876", requestOptions)
   const json = await res.json()
+
+  
   return {
     props: { allflights: json.response }
   }

@@ -17,6 +17,21 @@ export default function BlogDetails(props, router) {
     window.scrollTo(0, 0)
   }, [])
 
+  if (location.isFallback) {
+    return <>
+      <Header />
+
+      <div className='text-center full-w my-5 py-5'>
+        <div class="spinner-border text-secondary mr-2" role="status">
+        </div>  Loading...
+      </div>
+
+      <Footer />
+    </>
+  }
+
+  const monthlist = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
+
 
   return (
     <>
@@ -44,6 +59,7 @@ export default function BlogDetails(props, router) {
             <div className="page-title page-title--small page-title--blog align-left" >
               <div className="container">
                 <div className="page-title__content">
+              
                   <h1 className="page-title__name">
                     {props.singleblog[0].heading}
                   </h1>
@@ -70,7 +86,15 @@ export default function BlogDetails(props, router) {
                             props.singleblog[0].content === '' ?
                               <p className='pb-2'>No Content found</p>
                               :
+                           <>
+                              <div className="text-left text-secondary mb-2  text-sm">
+                              <i className="bi bi-calendar4 mr-2"></i>{" "}
+                              { (monthlist[new Date(props.singleblog[0].posttime).getMonth()])  + " " + (new Date(props.singleblog[0].posttime)).getDate() + ", " + (new Date(props.singleblog[0].posttime)).getFullYear()}
+                            </div>
+                            <hr></hr>
+
                               <div dangerouslySetInnerHTML={{ __html: props.singleblog[0].content }}></div>
+                           </>
                           }
                         </div>
 
@@ -106,7 +130,7 @@ export default function BlogDetails(props, router) {
 
 
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { params } = context
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
@@ -180,6 +204,67 @@ export async function getServerSideProps(context) {
     props: ({
       singleblog: onejson.response,
       recentblog: allblogjson.response
-    })
+    }),
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 60, // In seconds
   }
 }
+
+
+
+
+	// paths -> slugs which are allowed
+  export const getStaticPaths = async() => {
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+  
+    var raw = JSON.stringify({
+      "id": "",
+      "title": "",
+      "titleUrl": "",
+      "content": "",
+      "description": "",
+      "keywords": "",
+      "posttime": "",
+      "status": "",
+      "heading": "",
+      "img_url": "",
+      "siteId": "145",
+      "categoryName": "",
+      "blogdes2": "",
+      "blogTagsName2": "",
+      "extarTag": "",
+      "tfnHeader": "",
+      "tfnFooter1": "",
+      "tfnFooter2": "",
+      "tfnFooter3": "",
+      "tfnPopup": ""
+    });
+  
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+  
+    const res = await fetch("https://cms.travomint.com/travoles-content/showblogdata?authcode=Trav3103s987876", requestOptions)
+    const json = await res.json()
+    const data= json.response;
+    
+    // fallback ->
+    let paths =[];
+  
+    data.forEach((post)=>{
+    paths.push({
+      params:{blogDetail:post.titleUrl}
+    })
+  }) 
+
+    return {
+      paths,
+      fallback: true
+    }
+  }

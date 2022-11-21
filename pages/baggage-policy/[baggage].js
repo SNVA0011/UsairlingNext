@@ -16,6 +16,22 @@ export default function BlogDetails({ singleblog, recentblog }) {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+
+  if (location.isFallback) {
+    return <>
+      <Header />
+
+      <div className='text-center full-w my-5 py-5'>
+        <div class="spinner-border text-secondary mr-2" role="status">
+        </div>  Loading...
+      </div>
+
+      <Footer />
+    </>
+  }
+
+
   return (
     <>
 
@@ -111,7 +127,7 @@ export default function BlogDetails({ singleblog, recentblog }) {
 
 
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { params } = context
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
@@ -182,6 +198,70 @@ export async function getServerSideProps(context) {
     props: ({
       singleblog: onejson.response,
       recentblog: allblogjson.response
+    }),
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 60, // In seconds
+  }
+}
+
+
+
+
+
+// paths -> slugs which are allowed
+export const getStaticPaths = async () => {
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+
+  var raw = JSON.stringify(
+    {
+      "id": "",
+      "title": "",
+      "titleUrl": "",
+      "content": "",
+      "description": "",
+      "keywords": "",
+      "posttime": "",
+      "status": "",
+      "heading": "",
+      "categoryName": "",
+      "siteId": "145",
+      "pageType": "baggage-policy",
+      "extraTag": "",
+      "tfnHeader": "",
+      "tfnFooter1": "",
+      "tfnFooter2": "",
+      "tfnFooter3": "",
+      "tfnPopup": ""
     })
+
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow',
+  }
+
+  const res = await fetch(
+    'http://cms.travomint.com/news-article/showNAdata?authcode=Trav3103s987876',
+    requestOptions,
+  )
+  const json = await res.json()
+  const data = json.response;
+
+  // fallback ->
+  let paths = [];
+
+  data.forEach((post) => {
+    paths.push({
+      params: { baggage: post.titleUrl }
+    })
+  })
+
+  return {
+    paths,
+    fallback: true
   }
 }

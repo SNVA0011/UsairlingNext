@@ -143,7 +143,7 @@ export default function politicadeequipaje({baggagepolicy}) {
                             {baggagepolicy.map((items, i) => (
                                 <Col xs={12} md={6} lg={4} className="mb-3 px-2" key={i}>
                                     <Link href={`/es/politica-de-equipaje/${items.titleUrl}`}>
-                                        <a className="airplane-iconbx d-flex align-items-center h-100"> 
+                                        <a className="airplane-iconbx d-flex align-items-start h-100"> 
                                             <div className="cities__thumb hover__box__thumb">
                                                 <Image
                                                     src="/images/airplane-icon.png"
@@ -179,7 +179,7 @@ export default function politicadeequipaje({baggagepolicy}) {
 
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     var myHeaders = new Headers()
     myHeaders.append('Content-Type', 'application/json')
     var raw = JSON.stringify(

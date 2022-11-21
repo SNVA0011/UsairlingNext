@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-
 import Link from "next/link";
 import Container from 'react-bootstrap/Container';
 import BreadHero from "../../../component/es/BreadHero";
@@ -7,12 +6,30 @@ import Header from '../../../component/es/Navbar'
 import Footer from "../../../component/es/Footer"
 import Pageerror from "../../../component/es/Pageerror"
 import MetaHead from '../../../component/MetaHead';
+import { useRouter } from 'next/router';
 
 
 export default function Single(props) {
+
+  const location = useRouter();
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  if (location.isFallback) {
+    return <>
+      <Header />
+
+      <div className='text-center full-w my-5 py-5'>
+        <div class="spinner-border text-secondary mr-2" role="status">
+        </div>  Loading...
+      </div>
+
+      <Footer />
+    </>
+  }
+
 
 
   return (
@@ -76,7 +93,7 @@ export default function Single(props) {
 }
 
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { params } = context
   const pageurl = params.single.substring(0, params.single.lastIndexOf("-"));
   const pageValue = params.single.split("-").pop()
@@ -117,6 +134,69 @@ export async function getServerSideProps(context) {
   const res = await fetch("http://cms.travomint.com/travoles-content/showcontent?authcode=Trav3103s987876", requestOptions)
   const json = await res.json()
   return {
-    props: { singleflight: json.response }
+    props: { singleflight: json.response },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 60, // In seconds
   }
 }
+
+
+
+// paths -> slugs which are allowed
+export const getStaticPaths = async () => {
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+
+  var raw = JSON.stringify({
+    contentId: '',
+    pageType: '',
+    pageValue: '',
+    pageName: '',
+    metaTitle: '',
+    metaKeyword: '',
+    metaDesc: '',
+    otherMeta: '',
+    dealCode: '',
+    dealTitle: '',
+    contentTitle: '',
+    contentData: '',
+    contentImage: '',
+    siteId: '145',
+    status: '',
+    count: '',
+    url: '',
+    modifyBy: '',
+    modifyDate: '',
+  })
+
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow',
+  }
+
+  const res = await fetch(
+    'https://cms.travomint.com/travoles-content/site-map?authcode=Trav3103s987876',
+    requestOptions,
+  )
+  const json = await res.json()
+  const data = json.response;
+
+  // fallback ->
+  let paths = [];
+
+  data.forEach((post) => {
+    paths.push({
+      params: { single: post.url + "-" + post.pageValue }
+    })
+  })
+
+  return {
+    paths,
+    fallback: true
+  }
+}
+

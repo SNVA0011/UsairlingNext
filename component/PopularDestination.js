@@ -14,7 +14,7 @@ export default function PopularDestinations() {
 						<div className="row">
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/klm-airlines-kl">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -26,7 +26,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/united-airlines-UA">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -38,7 +38,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/american-airlines-aa">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -50,7 +50,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/alaska-airlines-as">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -62,7 +62,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/allegiant-airlines-G4">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -74,7 +74,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/copa-airlines-cm">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -86,7 +86,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/singapore-airlines-SQ">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -98,7 +98,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/air-canada-ac">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -111,7 +111,7 @@ export default function PopularDestinations() {
 	
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/delta-airlines-dl">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -124,7 +124,7 @@ export default function PopularDestinations() {
 
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/air-algerie-ah">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -136,7 +136,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/aeromexico-airlines-am">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 
@@ -148,7 +148,7 @@ export default function PopularDestinations() {
 							</div>
 							<div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-3">
 								<Link href="/flights/frontier-airlines-f9">
-									<a className="airplane-iconbx d-flex align-items-center h-100">
+									<a className="airplane-iconbx d-flex align-items-start h-100">
 										<div className="cities__thumb hover__box__thumb">
 											<Image src="/images/airplane-icon.png" alt="airlineone" width={58} height={58} layout='responsive' />
 										</div> 

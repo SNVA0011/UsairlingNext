@@ -7,8 +7,8 @@ import BreadHero from '../component/BreadHero'
 import MetaHead from '../component/MetaHead';
 
 
-export default function Blog(props) {
 
+export default function Blog(props) { 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -42,7 +42,7 @@ export default function Blog(props) {
             <Link href="/">Home</Link> </li> <li aria-current="page">Blog</li> </ul></>} />
         </div>
 
-        <div className='popular-destination blogaddalist full-w'>
+        <div className='popular-destination blogaddalist full-w'> 
           <BlogTile allbloglist={props.allbloglist} />
         </div>
       </div>
@@ -52,11 +52,10 @@ export default function Blog(props) {
 
 
   )
-}
+} 
 
 
-
-export async function getServerSideProps() {
+export async function getStaticProps() {
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
