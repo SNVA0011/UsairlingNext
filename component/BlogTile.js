@@ -12,6 +12,7 @@ export default function Blog(props) {
 
   // Example items, to simulate fetching from another resources.
   const items = props.allbloglist;
+ 
   function Items({ currentItems }) {
     return (
       <>

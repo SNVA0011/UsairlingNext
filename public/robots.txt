@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-sitemap: https://www.usairling.com/sitemap.xml
+ 
