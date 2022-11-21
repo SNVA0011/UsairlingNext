@@ -60,8 +60,7 @@ export default function RecentDestination(props) {
                                             <i className="bi bi-chevron-double-right rpost-right"></i>
                                         </div>
                                         <div className="card-body flex-grow-1 pr-0 rpost-heading">
-                                        <div className="text-left text-secondary mb-1  text-sm">
-                              <i className="bi bi-calendar4 mr-2"></i>{" "}
+                                        <div className="text-left text-secondary mb-1  text-sm"> 
                               { (monthlist[new Date(items.posttime).getMonth()])  + " " + (new Date(items.posttime)).getDate() + ", " + (new Date(items.posttime)).getFullYear()}
                             </div>
                                             <h5 className="card-title mb-0">{items.heading}</h5>
