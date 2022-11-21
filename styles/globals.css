@@ -2181,7 +2181,6 @@ html { scroll-behavior: smooth }
  .top_airlines_area.baggage .title-border-bottom { max-width: 410px; margin-left: auto; margin-right: auto; }
  .destination-list .img-topwrap span { float: left; width: 100%; }
  .privacy__policy h2, .privacy__policy h3, .blog-inner-box2 h2:first-child, .blog-inner-box2 h3:first-child, .privacy__policy h2:first-child, .privacy__policy h3:first-child { font-size: 1.5rem; }
- .pagination-cstm{ }
  .pagination.pagination-cstm .page-link {
     border: none;
 }
