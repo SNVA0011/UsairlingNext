@@ -15,7 +15,7 @@ export default function RecentDestination(props) {
         setblogName(val)
     }
 
-    const getURL = (val) => {
+    const getURLFull = (val) => {
         setblogName("")
         location.push(val)
     }
@@ -73,7 +73,7 @@ export default function RecentDestination(props) {
                                     <Dropdown.Menu show>
                                         {
                                             props.searchbyname.filter(({ heading }) => blogName === '' || heading.toLowerCase().includes(blogName.toLowerCase())).map((items, i) => (
-                                                <Dropdown.Item as="button" onClick={() => { getURL(props.langrecent === 'en' ? `/blog/${items.titleUrl}` : `/es/articulos/${items.titleUrl}`) }} >
+                                                <Dropdown.Item as="button" onClick={() => { getURLFull(props.langrecent === 'en' ? `/blog/${items.titleUrl}` : `/es/articulos/${items.titleUrl}`) }} >
                                                     {items.heading}
                                                 </Dropdown.Item>
                                             ))
