@@ -34,7 +34,7 @@ export default function BlogDetails(props, router) {
   }
 
   const monthlist = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
-
+ 
 
   return (
     <>
@@ -107,6 +107,9 @@ export default function BlogDetails(props, router) {
                     <RecentDestination
                       title="BLOGS RECIENTES"
                       langrecent="es"
+                      searchbyname={
+                        props.recentblog
+                      }
                       recentblog={
                         props.recentblog.slice(0, 6)
                       }

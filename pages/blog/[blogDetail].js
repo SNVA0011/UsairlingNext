@@ -106,6 +106,9 @@ export default function BlogDetails(props, router) {
                     <RecentDestination
                       title="RECENT BLOGS"
                       langrecent="en"
+                      searchbyname={
+                        props.recentblog
+                      }
                       recentblog={
                         props.recentblog.slice(0, 6)
                       }
